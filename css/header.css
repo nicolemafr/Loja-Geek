@@ -6,22 +6,26 @@
 header{
     display: flex;
     justify-content: space-around;
+    background-color: black;
     padding: 20px;
+    nav{
+        display: flex;
+        gap: 150px;
+        align-items: center;
+        a{
+            text-decoration: none;
+        }
     .meio-header{
         display: flex;
-        gap: 20px;
+        gap: 400px;
+        align-items: center;
 
-        nav{
-            display: flex;
-            gap: 15px;
+        }
+        input{
+            
             align-items: center;
-            a{
-                text-decoration: none;
-            }
-
-            input{
-                width: 200px;
-            }
+            width: 300px;
+            height: 20px;
         }
     }
 
