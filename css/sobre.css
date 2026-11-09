@@ -1,0 +1,176 @@
+@import url(https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #181620;
+}
+
+.inicio {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+
+    h1 {
+        color: #F3F39C;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 35px;
+        width: 500px;
+
+        span {
+            font-family: 'Press Start 2P', display;
+            color: #AC91CD;
+            font-size: 27px;
+        }
+    }
+
+    p {
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        font-size: 18px;
+        width: 520px;
+    }
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+
+    .c1 {
+        background: url(../imagens/SobreF1.png);
+
+        h2 {
+            margin-left: -80px;
+        }
+    }
+
+    .c2 {
+        background: url(../imagens/SobreF2.png);
+
+        h2 {
+            margin-left: -100px;
+        }
+    }
+
+    .c3 {
+        background: url(../imagens/SobreF3.png);
+
+        h2 {
+            margin-left: -40px;
+        }
+    }
+
+    .card {
+        background-size: cover;
+        background-position: center;
+        width: 375px;
+        height: 375px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Montserrat', sans-serif;
+        color: #F3F39C;
+
+        p {
+            width: 275px;
+            font-size: 22px;
+        }
+    }
+}
+
+.possi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 25px;
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: #F3F39C;
+            font-size: 55px;
+            width: 500px;
+
+            span {
+                color: #AC91CD;
+                font-family: 'Press Start 2P', display;
+                font-size: 40px;
+            }
+        }
+
+        p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 26px;
+            font-weight: 400;
+            color: white;
+            width: 500px;
+        }
+
+        button {
+            border: none;
+            cursor: pointer;
+            position: relative;
+            width: 333px;
+            height: 50px;
+            margin: 0 auto;
+            z-index: 4;
+            background: transparent;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            color: white;
+        }
+
+        .BotaoF {
+            background-image: url(../imagens/BotaoF.png);
+            position: absolute;
+            background-size: cover;
+            width: 333px;
+            height: 50px;
+            bottom: -600px;
+            left: 135px;
+            z-index: 1;
+        }
+    }
+
+    img {
+        width: 50%;
+    }
+}
+
+.lore {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    justify-content: center;
+    gap: 50px;
+
+    h2 {
+        font-family: 'Press Start 2P', display;
+        color: #F3F39C;
+        font-size: 36px;
+    }
+
+    p {
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        font-size: 26px;
+        width: 1125px;
+    }
+}
