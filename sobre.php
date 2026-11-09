@@ -45,7 +45,7 @@
             <div class="BotaoF"></div>
         </div>
 
-        <img src="imagens/Manime.png" alt="">
+        <img src="imagens/Grupo.png" alt="">
     </div>
 
     <div class="lore">
