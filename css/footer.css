@@ -1,0 +1,177 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    width: 100%;
+    padding: 25px;
+    background-color: #0C0112;
+}
+
+.novidade {
+    display: flex;
+    gap: 300px;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 30px;
+            color: #F3F39C;
+
+            span {
+                font-weight: 900;
+            }
+        }
+
+        p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            width: 400px;
+            color: whitesmoke;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+
+        input {
+            border: 1px solid #AC91CD;
+            background-color: transparent;
+            border-radius: 25px;
+            height: 40px;
+            padding: 10px 20px;
+        }
+
+        button {
+            padding: 10px 40px;
+            border-radius: 20px;
+            background-color: #883CED;
+            border: 1px solid #AC91CD;
+            height: 40px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 25px;
+            }
+            cursor: pointer;
+        }
+    }
+
+}
+
+.Fmain {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+
+    h2 {
+        color: #F3F39C;
+        font-family: 'Press Start 2P', display;
+        margin-bottom: 10px;
+    }
+
+    .explore {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-direction: column;
+        color: whitesmoke;
+        border-right: 2px solid #883CED;
+        padding-right: 50px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 50px;
+        border-right: 2px solid #883CED;
+        padding-right: 50px;
+
+
+        .institucional {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-direction: column;
+            color: whitesmoke;
+            font-family: 'Montserrat', sans-serif;
+            border: none;
+            padding: 0;
+        }
+
+        .atendimento {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-direction: column;
+            color: whitesmoke;
+            font-family: 'Montserrat', sans-serif;
+            border: none;
+            padding: 0;
+
+            p{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                img{
+                    width: 25px;
+                }
+            }
+        }
+    }
+
+    .redes {
+        display: flex;
+        gap: 25px;
+        border: none;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+
+        h2 {
+            width: 400px;
+        }
+
+        .rede {
+            height: 50px;
+            gap: 10px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            color: white;
+            border: none;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+
+            p {
+                width: 300px;
+            }
+
+            img {
+                width: 50px;
+            }
+        }
+    }
+
+    img{
+        width: 350px;
+    }
+}
