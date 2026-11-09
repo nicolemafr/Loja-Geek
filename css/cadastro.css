@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../imagens/LoginF.png);
+
+    main {
+        width: 500px;
+        height: 500px;
+        background: linear-gradient(180deg, rgba(33, 31, 44, 1) 0%, rgba(18, 16, 24, 1) 100%);
+        border-radius: 25px;
+        border: 1px solid #AC91CD;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+
+        h1 {
+            font-family: 'Press Start 2P', display;
+            color: #F3F39C;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            justify-content: center;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                color: white;
+
+                a {
+                    text-decoration: none;
+                    font-family: 'Press Start 2P', display;
+                    color: #F3F39C;
+                    font-size: 10px;
+                    cursor: pointer;
+                }
+
+                input {
+                    padding: 10px 20px;
+                    border-radius: 12px;
+                    border: 2px solid #AC91CD;
+                    background-color: #282632;
+                    color: white;
+                    width: 425px;
+                }
+            }
+
+            button {
+                border: none;
+                cursor: pointer;
+                position: relative;
+                width: 333px;
+                height: 50px;
+                margin: 0 auto;
+                z-index: 4;
+                background: transparent;
+                text-align: center;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 900;
+                color: white;
+            }
+
+            .BotaoF {
+                background-image: url(../imagens/BotaoF.png);
+                position: absolute;
+                background-size: cover;
+                width: 425px;
+                height: 50px;
+                bottom: 181px;
+                z-index: 1;
+            }
+        }
+    }
+}
