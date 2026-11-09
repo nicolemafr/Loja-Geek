@@ -6,11 +6,11 @@ $paginaAtual = basename($_SERVER['PHP_SELF']);
     <img class="logo-header" src="./imagens/logo.png" alt="Logo Site">
 
     <nav>
-        <a class="Home-Header <?= $paginaAtual == 'index.php' ? 'ativo' : '' ?>" href="index.php">Home</a>
+        <a class="Home-Header <?= $paginaAtual == 'index.php' ? 'ativo' : '' ?>" href="index.php">HOME</a>
 
-        <a class="Sobre-Header <?= $paginaAtual == 'sobre.php' ? 'ativo' : '' ?>" href="sobre.php">Sobre</a>
+        <a class="Sobre-Header <?= $paginaAtual == 'sobre.php' ? 'ativo' : '' ?>" href="sobre.php">SOBRE</a>
 
-        <a class="Produtos-Header <?= $paginaAtual == 'produtos.php' ? 'ativo' : '' ?>" href="produtos.php">Produtos</a>
+        <a class="Produtos-Header <?= $paginaAtual == 'produtos.php' ? 'ativo' : '' ?>" href="produtos.php">PRODUTOS</a>
     </nav>
 
     <div class="meio-header">
