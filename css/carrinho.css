@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #181620;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+
+    h1{
+        color: #F3F39C;
+        font-family: 'Press Start 2P', display;
+    }
+
+    p{
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.itens{
+    border: 2px solid #AC91CD;
+    background-color: #180D35;
+    width: 50%;
+
+    height: 100px;
+    background-color: #282632;
+}
+
+.resumo{
+    border: 2px solid #AC91CD;
+    width: 50%;
+    height: 100px;
+    background-color: #282632;
+}

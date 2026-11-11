@@ -13,6 +13,26 @@
 <body>
     <?php include "./view/header.php" ?>
 
+    <div class="possi">
+        <div class="text">
+            <h2>UM UNIVERSO, INÚMERAS <span>POSSIBILIDADES.</span></h2>
+
+            <p>Dos clássicos que marcaram gerações às novidades que despertam novas paixões. Aqui, cada detalhe tem uma história.</p>
+
+            <div>
+                <button>EXPLORAR PRODUTOS <img src="imagens/setinha.png" alt=""></button>
+                <div class="BotaoF"></div>
+            </div>
+        </div>
+
+        <div>
+            <img src="imagens/Grupo.png" alt="" class="grupo">
+            <img src="imagens/Fundoimg.png" alt="" class="Dgrupo">
+        </div>
+
+        <img src="imagens/SobreF5.png" alt="" class="SobreF2">
+    </div>
+
     <section class="inicio">
         <h1>MAIS QUE UMA LOJA, UM UNIVERSO DE <span>PIXELS</span></h1>
         <p>A Mikroskosmos nasceu da paixão pela cultura geek, unindo games, animes, mangás e muito mais em um só lugar. Aqui, cada detalhe é pensado para quem vive esse universo.</p>
@@ -36,23 +56,6 @@
             <h2>NOSSOS VALORES</h2>
             <p>Paixão, respeito, criatividade e compromisso com a comunidade. </p>
         </div>
-    </div>
-
-    <div class="possi">
-        <div class="text">
-            <h2>UM UNIVERSO, INÚMERAS <span>POSSIBILIDADES.</span></h2>
-
-            <p>Dos clássicos que marcaram gerações às novidades que despertam novas paixões. Aqui, cada detalhe tem uma história.</p>
-
-            <div>
-                <button>EXPLORAR PRODUTOS</button>
-                <div class="BotaoF"></div>
-            </div>
-        </div>
-
-        <img src="imagens/Grupo.png" alt="">
-
-        <img src="imagens/SobreF5.png" alt="" class="SobreF2">
     </div>
 
     <?php include "./view/footer.php" ?>
