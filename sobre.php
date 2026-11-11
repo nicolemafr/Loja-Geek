@@ -1,36 +1,17 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
-<html lang="en">
-=======
 <html lang="pt-br">
->>>>>>> 7777a0d16fc99bb7e1be148af08e6770d0591539
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-    <title>Document</title>
-=======
     <link rel="stylesheet" href="css/sobre.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
     <title>Sobre</title>
->>>>>>> 7777a0d16fc99bb7e1be148af08e6770d0591539
 </head>
 
 <body>
     <?php include "./view/header.php" ?>
-<<<<<<< HEAD
-=======
 
     <section class="inicio">
         <h1>MAIS QUE UMA LOJA, UM UNIVERSO DE <span>PIXELS</span></h1>
@@ -74,7 +55,6 @@
         <img src="imagens/SobreF5.png" alt="" class="SobreF2">
     </div>
 
->>>>>>> 7777a0d16fc99bb7e1be148af08e6770d0591539
     <?php include "./view/footer.php" ?>
 </body>
 
