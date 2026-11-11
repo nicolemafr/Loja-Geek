@@ -25,6 +25,8 @@
 
             <div class="Fpreco">
                 <h2>Preço</h2>
+
+                <input type="range" name="" id="" min="1" max="500" step="5" value="250">
             </div>
 
             <h2>Disponibilidade</h2>

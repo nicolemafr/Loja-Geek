@@ -12,6 +12,7 @@ body {
 }
 
 .body {
+    margin-top: 60px;
     display: flex;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
@@ -33,6 +34,9 @@ body {
         color: white;
         font-size: 20px;
         padding: 8px;
+        font-weight: 500;
+        cursor: pointer;
+        width: 150px;
     }
 
     .selected {
@@ -44,12 +48,25 @@ body {
 
     .Fpreco {
         padding: 20px 0px;
-        border-top: 2px solid #1d1d22;
-        border-bottom: 2px solid #1d1d22;
+        border-top: 4px solid #1d1d22;
+        border-bottom: 4px solid #1d1d22;
+        border-radius: 10px;
 
         h2 {
             color: white;
         }
+    }
+
+    span {
+        width: 5px;
+        height: 5px;
+        padding: 5px 15px;
+        border-radius: 10px;
+        border: 2px solid #AC91CD;
+    }
+
+    .full{
+        background-color: #AC91CD;
     }
 }
 
