@@ -35,6 +35,8 @@ body {
         font-size: 20px;
         padding: 8px;
         font-weight: 500;
+        cursor: pointer;
+        width: 150px;
     }
 
     .selected {
