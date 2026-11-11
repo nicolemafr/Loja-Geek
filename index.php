@@ -31,7 +31,9 @@
             <h1 class="h1-hero-1"><span class="span1">MUNDO PEQUENO </span>DEMAIS</h1>
             <h1 class="h1-hero-2">PARA <span class="span2">TANTOS UNIVERSOS</span></h1>
             <p>Dos mundos que você já conhece aos que ainda vai descobrir, seu próximo achado está aqui.</p>
-            <a class="btn-hero" href="">EXPLORAR PRODUTOS <img src="./imagens/setinha.png" alt=""> </a>
+            <a class="btn-hero" href="">
+                <h4>EXPLORAR PRODUTOS</h4><img src="./imagens/setinha.png" alt="">
+            </a>
         </div>
 
         <div class="lado-direitoHero">
@@ -40,6 +42,7 @@
     </div>
 
     <div class="cards-container">
+        <div class="card-titulo"><h1>CATEGORIAS</h1></div>
         <div class="cards">
             <div class="card">
                 <div class="img-card">
@@ -52,13 +55,13 @@
                         <p>15 PRODUTOS</p>
                         <h3>MANGÁS</h3>
                     </div>
-                    <img class="btn-seta" src="./imagens/botao-seta.png" alt="">
+                    <a href="/"><img class="btn-seta" src="./imagens/botao-seta.png" alt=""></a>
                 </div>
             </div>
             <div class="card">
                 <div class="img-card">
-                    <img class="img3" src="./imagens/camisa-card.png" alt="">
-                    <img class="img4" src="./imagens/camisa-card2.png" alt="">
+                    <img class="img3" src="./imagens/vestuario1.png" alt="">
+                    <img class="img4" src="./imagens/vestuario2.png" alt="">
 
                 </div>
                 <div class="info-card">
@@ -66,91 +69,91 @@
                         <p>15 PRODUTOS</p>
                         <h3>VESTUÁRIO</h3>
                     </div>
-                    <img class="btn-seta" src="./imagens/botao-seta.png" alt="">
+                    <a href=""><img class="btn-seta" src="./imagens/botao-seta.png" alt=""></a>
                 </div>
             </div>
             <div class="card">
                 <div class="img-card">
-                    <img class="img1" src="./imagens/Manga9-2.png" alt="">
-                    <img class="img2" src="./imagens/Manga15-2.png" alt="">
+                    <img class="img6" src="./imagens/decoracao1-2.png" alt="">
+                    <img class="img5" src="./imagens/decoracao2-2.png" alt="">
 
                 </div>
                 <div class="info-card">
                     <div class="escrita-card">
-                        <p>15 Produtos</p>
-                        <h3>Mangás</h3>
+                        <p>15 PRODUTOS</p>
+                        <h3>DECORAÇÃO</h3>
                     </div>
-                    <img class="btn-seta" src="./imagens/botao-seta.png" alt="">
+                    <a href=""><img class="btn-seta" src="./imagens/botao-seta.png" alt=""></a>
                 </div>
             </div>
             <div class="card">
                 <div class="img-card">
-                    <img class="img1" src="./imagens/Manga9-2.png" alt="">
-                    <img class="img2" src="./imagens/Manga15-2.png" alt="">
+                    <img class="img7" src="./imagens/funko5-2.png" alt="">
+                    <img class="img8" src="./imagens/funko7-2.png" alt="">
 
                 </div>
                 <div class="info-card">
                     <div class="escrita-card">
-                        <p>15 Produtos</p>
-                        <h3>Mangás</h3>
+                        <p>15 PRODUTOS</p>
+                        <h3>FUNKO POP</h3>
                     </div>
-                    <img class="btn-seta" src="./imagens/botao-seta.png" alt="">
+                    <a href=""><img class="btn-seta" src="./imagens/botao-seta.png" alt=""></a>
                 </div>
             </div>
             <div class="card">
                 <div class="img-card">
-                    <img class="img1" src="./imagens/Manga9-2.png" alt="">
-                    <img class="img2" src="./imagens/Manga15-2.png" alt="">
+                    <img class="img10" src="./imagens/acessorio2.png" alt="">
+                    <img class="img9" src="./imagens/acessorio1.png" alt="">
 
                 </div>
                 <div class="info-card">
                     <div class="escrita-card">
-                        <p>15 Produtos</p>
-                        <h3>Mangás</h3>
+                        <p>15 PRODUTOS</p>
+                        <h3>ACESSÓRIOS</h3>
                     </div>
-                    <img class="btn-seta" src="./imagens/botao-seta.png" alt="">
+                    <a href=""><img class="btn-seta" src="./imagens/botao-seta.png" alt=""></a>
                 </div>
             </div>
             <div class="card">
                 <div class="img-card">
-                    <img class="img1" src="./imagens/Manga9-2.png" alt="">
-                    <img class="img2" src="./imagens/Manga15-2.png" alt="">
+                    <img class="img12" src="./imagens/carta2.png" alt="">
+                    <img class="img11" src="./imagens/carta1.png" alt="">
 
                 </div>
                 <div class="info-card">
                     <div class="escrita-card">
-                        <p>15 Produtos</p>
-                        <h3>Mangás</h3>
+                        <p>15 PRODUTOS</p>
+                        <h3>CARTAS</h3>
                     </div>
-                    <img class="btn-seta" src="./imagens/botao-seta.png" alt="">
+                    <a href=""><img class="btn-seta" src="./imagens/botao-seta.png" alt=""></a>
                 </div>
             </div>
             <div class="card">
                 <div class="img-card">
-                    <img class="img1" src="./imagens/Manga9-2.png" alt="">
-                    <img class="img2" src="./imagens/Manga15-2.png" alt="">
+                    <img class="img14" src="./imagens/comic2.png" alt="">
+                    <img class="img13" src="./imagens/comic1.png" alt="">
 
                 </div>
                 <div class="info-card">
                     <div class="escrita-card">
-                        <p>15 Produtos</p>
-                        <h3>Mangás</h3>
+                        <p>15 PRODUTOS</p>
+                        <h3>COMICS</h3>
                     </div>
-                    <img class="btn-seta" src="./imagens/botao-seta.png" alt="">
+                    <a href=""><img class="btn-seta" src="./imagens/botao-seta.png" alt=""></a>
                 </div>
             </div>
             <div class="card">
                 <div class="img-card">
-                    <img class="img1" src="./imagens/Manga9-2.png" alt="">
-                    <img class="img2" src="./imagens/Manga15-2.png" alt="">
+                    <img class="img16" src="./imagens/utensilio2.png" alt="">
+                    <img class="img15" src="./imagens/utensilio1.png" alt="">
 
                 </div>
                 <div class="info-card">
                     <div class="escrita-card">
-                        <p>15 Produtos</p>
-                        <h3>Mangás</h3>
+                        <p>15 PRODUTOS</p>
+                        <h3>UTENSÍLIOS</h3>
                     </div>
-                    <img class="btn-seta" src="./imagens/botao-seta.png" alt="">
+                    <a href=""><img class="btn-seta" src="./imagens/botao-seta.png" alt=""></a>
                 </div>
             </div>
         </div>
@@ -181,11 +184,45 @@
 
     <div class="carrossel-home">
 
+        <h1><span class="span1-carrosel">CLIENTES</span> AVALIANDO <span class="span2-carrosel">NOSSO TRABALHO</span>
+        </h1>
+
+        <div class="caixas-carrossel">
+            <div class="caixa">
+                <img src="https://placehold.co/200x300" alt="">
+            </div>
+            <div class="caixa">
+                <img src="https://placehold.co/200x300" alt="">
+            </div>
+            <div class="caixa">
+                <img src="https://placehold.co/200x300" alt="">
+            </div>
+            <div class="caixa">
+                <img src="https://placehold.co/200x300" alt="">
+            </div>
+            <div class="caixa">
+                <img src="https://placehold.co/200x300" alt="">
+            </div>
+            <div class="caixa">
+                <img src="https://placehold.co/200x300" alt="">
+            </div>
+            <div class="caixa">
+                <img src="https://placehold.co/200x300" alt="">
+            </div>
+        </div>
+
+        <div class="setas-carrossel">
+            <img class="left-seta" id="" src="./imagens/left.png" alt="">
+            <img class="right-seta" id="" src="./imagens/right.png" alt="">
+        </div>
+
     </div>
 
 
+    <div class="promo-escrita">
+        <h3>PRODUTOS EM PROMOÇÃO</h3>
+    </div>
     <div class="overflow-home">
-        <div class="promo-escrita"><h3>PRODUTOS EM PROMOÇÃO</h3></div>
         <div class="cards-promo">
             <div class="img-promo">
                 <img src="./img/funko1.png" alt="">
@@ -196,10 +233,125 @@
                 <h3>R$ 149,90</h3>
                 <h2>R$ 93,50</h2>
             </div>
-            <a class="btn-promo" href="">SAIBA MAIS</a>
+            <a class="btn-promo" href="">
+                <p>SAIBA MAIS</p>
+            </a>
+        </div>
+        <div class="cards-promo">
+            <div class="img-promo">
+                <img src="./img/funko1.png" alt="">
+            </div>
+            <div class="escrita-promo">
+                <h4>Funko Pop Sakura</h4>
+                <p>Naruto</p>
+                <h3>R$ 149,90</h3>
+                <h2>R$ 93,50</h2>
+            </div>
+            <a class="btn-promo" href="">
+                <p>SAIBA MAIS</p>
+            </a>
+        </div>
+        <div class="cards-promo">
+            <div class="img-promo">
+                <img src="./img/funko1.png" alt="">
+            </div>
+            <div class="escrita-promo">
+                <h4>Funko Pop Sakura</h4>
+                <p>Naruto</p>
+                <h3>R$ 149,90</h3>
+                <h2>R$ 93,50</h2>
+            </div>
+            <a class="btn-promo" href="">
+                <p>SAIBA MAIS</p>
+            </a>
+        </div>
+        <div class="cards-promo">
+            <div class="img-promo">
+                <img src="./img/funko1.png" alt="">
+            </div>
+            <div class="escrita-promo">
+                <h4>Funko Pop Sakura</h4>
+                <p>Naruto</p>
+                <h3>R$ 149,90</h3>
+                <h2>R$ 93,50</h2>
+            </div>
+            <a class="btn-promo" href="">
+                <p>SAIBA MAIS</p>
+            </a>
+        </div>
+        <div class="cards-promo">
+            <div class="img-promo">
+                <img src="./img/funko1.png" alt="">
+            </div>
+            <div class="escrita-promo">
+                <h4>Funko Pop Sakura</h4>
+                <p>Naruto</p>
+                <h3>R$ 149,90</h3>
+                <h2>R$ 93,50</h2>
+            </div>
+            <a class="btn-promo" href="">
+                <p>SAIBA MAIS</p>
+            </a>
+        </div>
+        <div class="cards-promo">
+            <div class="img-promo">
+                <img src="./img/funko1.png" alt="">
+            </div>
+            <div class="escrita-promo">
+                <h4>Funko Pop Sakura</h4>
+                <p>Naruto</p>
+                <h3>R$ 149,90</h3>
+                <h2>R$ 93,50</h2>
+            </div>
+            <a class="btn-promo" href="">
+                <p>SAIBA MAIS</p>
+            </a>
+        </div>
+        <div class="cards-promo">
+            <div class="img-promo">
+                <img src="./img/funko1.png" alt="">
+            </div>
+            <div class="escrita-promo">
+                <h4>Funko Pop Sakura</h4>
+                <p>Naruto</p>
+                <h3>R$ 149,90</h3>
+                <h2>R$ 93,50</h2>
+            </div>
+            <a class="btn-promo" href="">
+                <p>SAIBA MAIS</p>
+            </a>
+        </div>
+        <div class="cards-promo">
+            <div class="img-promo">
+                <img src="./img/funko1.png" alt="">
+            </div>
+            <div class="escrita-promo">
+                <h4>Funko Pop Sakura</h4>
+                <p>Naruto</p>
+                <h3>R$ 149,90</h3>
+                <h2>R$ 93,50</h2>
+            </div>
+            <a class="btn-promo" href="">
+                <p>SAIBA MAIS</p>
+            </a>
+        </div>
+        <div class="cards-promo">
+            <div class="img-promo">
+                <img src="./img/funko1.png" alt="">
+            </div>
+            <div class="escrita-promo">
+                <h4>Funko Pop Sakura</h4>
+                <p>Naruto</p>
+                <h3>R$ 149,90</h3>
+                <h2>R$ 93,50</h2>
+            </div>
+            <a class="btn-promo" href="">
+                <p>SAIBA MAIS</p>
+            </a>
         </div>
     </div>
 
+    <?php include "./view/footer.php" ?>
 </body>
 
 </html>
