@@ -8,8 +8,6 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: black;
-    padding: 10px;
-
 
     nav {
         display: flex;
@@ -18,9 +16,10 @@ header {
 
 
         a {
-            font-family: "Press start 2p", cursive;
+            font-family: "Press start 2p", display;
             position: relative;
             display: flex;
+            font-size: 15px ;
             align-items: center;
             height: 100%;
             text-decoration: none;
@@ -43,7 +42,7 @@ header {
     .ativo::after {
         content: "";
         position: absolute;
-        bottom: -10px;
+        bottom: -2px;
         left: 50%;
         transform: translateX(-50%);
         width: 150px;
@@ -61,7 +60,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 400px;
+        width: 450px;
         padding: 9px;
         gap: 12px;
         background-color: #1F1E2D;
