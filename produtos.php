@@ -48,6 +48,106 @@
         </div>
     </div>
 
+    <div class="produtos">
+        <div class="produto">
+            <img src="imagens/produto1.png" alt="">
+            <h3>Funko Pop Sakura</h3>
+            <p>Naruto</p>
+            <h2>R$ 149,90</h2>
+            <div class="info">
+                <p> <span></span> Em estoque</p>
+                <img src="imagens/Carrinho 2.png" alt="">
+            </div>
+        </div>
+
+        <div class="produto">
+            <img src="imagens/produto1.png" alt="">
+            <h3>Funko Pop Sakura</h3>
+            <p>Naruto</p>
+            <h2>R$ 149,90</h2>
+            <div class="info">
+                <p> <span></span> Em estoque</p>
+                <img src="imagens/Carrinho 2.png" alt="">
+            </div>
+        </div>
+
+        <div class="produto">
+            <img src="imagens/produto1.png" alt="">
+            <h3>Funko Pop Sakura</h3>
+            <p>Naruto</p>
+            <h2>R$ 149,90</h2>
+            <div class="info">
+                <p> <span></span> Em estoque</p>
+                <img src="imagens/Carrinho 2.png" alt="">
+            </div>
+        </div>
+
+        <div class="produto">
+            <img src="imagens/produto1.png" alt="">
+            <h3>Funko Pop Sakura</h3>
+            <p>Naruto</p>
+            <h2>R$ 149,90</h2>
+            <div class="info">
+                <p> <span></span> Em estoque</p>
+                <img src="imagens/Carrinho 2.png" alt="">
+            </div>
+        </div>
+
+        <div class="produto">
+            <img src="imagens/produto1.png" alt="">
+            <h3>Funko Pop Sakura</h3>
+            <p>Naruto</p>
+            <h2>R$ 149,90</h2>
+            <div class="info">
+                <p> <span></span> Em estoque</p>
+                <img src="imagens/Carrinho 2.png" alt="">
+            </div>
+        </div>
+
+        <div class="produto">
+            <img src="imagens/produto1.png" alt="">
+            <h3>Funko Pop Sakura</h3>
+            <p>Naruto</p>
+            <h2>R$ 149,90</h2>
+            <div class="info">
+                <p> <span></span> Em estoque</p>
+                <img src="imagens/Carrinho 2.png" alt="">
+            </div>
+        </div>
+
+        <div class="produto">
+            <img src="imagens/produto1.png" alt="">
+            <h3>Funko Pop Sakura</h3>
+            <p>Naruto</p>
+            <h2>R$ 149,90</h2>
+            <div class="info">
+                <p> <span></span> Em estoque</p>
+                <img src="imagens/Carrinho 2.png" alt="">
+            </div>
+        </div>
+
+        <div class="produto">
+            <img src="imagens/produto1.png" alt="">
+            <h3>Funko Pop Sakura</h3>
+            <p>Naruto</p>
+            <h2>R$ 149,90</h2>
+            <div class="info">
+                <p> <span></span> Em estoque</p>
+                <img src="imagens/Carrinho 2.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="numeracao">
+        <p class="selected">1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>...</p>
+    </div>
+
     <?php include "./view/footer.php" ?>
 </body>
 
