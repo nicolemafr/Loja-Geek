@@ -47,6 +47,7 @@ footer {
         gap: 25px;
 
         input {
+            color: white;
             border: 1px solid #AC91CD;
             background-color: transparent;
             border-radius: 25px;

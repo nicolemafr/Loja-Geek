@@ -4,6 +4,28 @@
 
 }
 
+/* Define a largura (vertical) e altura (horizontal) bem fina */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+}
+
+/* Fundo transparente para ficar invisível ou discreto */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* O puxador (thumb) fino */
+::-webkit-scrollbar-thumb {
+    background: #AC91CD;
+    border-radius: 10px;
+}
+
+/* Muda de cor ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+    background: #AC91CD;
+}
+
 body {
     background-color: #181620;
 }
@@ -17,7 +39,6 @@ body {
     .lado-esquerdoHero {
         display: flex;
         flex-direction: column;
-
         position: absolute;
         top: 25%;
         margin-left: 60px;
@@ -28,6 +49,7 @@ body {
             font-size: 58px;
             width: 100%;
             font-weight: 700;
+
             span {
                 font-weight: 900;
                 color: #D069FC;
@@ -40,6 +62,7 @@ body {
             font-size: 58px;
             width: 100%;
             font-weight: 700;
+
             span {
                 font-weight: 900;
                 font-family: "press start 2p";
@@ -51,8 +74,6 @@ body {
         a {
             display: flex;
             gap: 12px;
-            align-items: center;
-            justify-content: center;
             background-image: url(/imagens/botao-hero.png);
             height: 80px;
             width: 370px;
@@ -63,12 +84,20 @@ body {
             font-weight: bold;
             font-size: 20px;
 
+            h4 {
+                margin-top: 15px;
+                margin-left: 48px;
+            }
+
             img {
+                align-items: center;
                 width: 25px;
+                height: 25px;
+                margin-top: 15px;
             }
         }
 
-        p{
+        p {
             color: white;
             width: 65%;
             font-size: 25px;
@@ -84,6 +113,7 @@ body {
         bottom: 0;
 
         img {
+            bottom: 0;
             width: 100%;
             height: 557px;
         }
@@ -93,108 +123,216 @@ body {
 
 .cards-container {
     width: 100%;
-    height: 800px;
-
-    gap: 40px;
+    z-index: 1;
+    height: 700px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
     background-image: url(/imagens/card-fundo.png);
     background-size: cover;
-    padding: 30px;
+
+    .card-titulo{
+        margin-top: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 30px;
+        color: #F3F39C;
+        font-family: "Press start 2P";
+    }
 
     .cards {
-        width: 1420px;
         margin: 0 auto;
         display: grid;
+        gap: 14px 40px;
         grid-template-columns: repeat(4, 1fr);
-        gap: 80px;
+        align-items: center;
     }
 
     .card {
-        width: 300px;
-        height: 300px;
+        width: 330px;
+        height: 290px;
         border: #AC91CD solid 1px;
-        display: flex;
 
         border-radius: 12px;
         background-color: rgb(43, 43, 43);
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         position: relative;
+        overflow: hidden;
 
         p {
             font-family: "press start 2p";
-            font-size: 12px;
+            font-size: 8px;
             color: #F3F39C;
         }
 
         h3 {
-            font-size: 12px;
+            font-size: 25px;
             font-family: "montserrat";
             color: white;
         }
 
         .img-card {
-            display: flex;
-            justify-content: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #343042;
+            background: linear-gradient(180deg, rgba(52, 48, 66, 1) 0%, rgba(18, 16, 24, 1) 50%);
             width: 100%;
-            height: 70%;
-            z-index: 0;
-            border-bottom: #AC91CD solid 1px;
+            height: 100%;
 
+            z-index: 1;
+        }
 
-            .img1 {
-                position: absolute;
-                top: 3%;
-                left: 37%;
-            }
-
-            .img2 {
-                position: absolute;
-                top: 13%;
-                right: 35%;
-            }
-
-            img {
-
-                width: 150px;
-            }
-
+        .img-card img {
+            position: absolute;
+            object-fit: contain;
         }
 
         .info-card {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 60px;
-            margin-top: 10px;
+            position: absolute;
+
+            bottom: 0;
+            left: 0;
+
             width: 100%;
-            z-index: 5;
+            height: 80px;
+
+            background-color: #171421;
+            border-top: 1px solid #AC91CD;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 0 15px;
+            box-sizing: border-box;
+
+            z-index: 10;
         }
 
         .btn-seta {
-            width: 40px;
+            width: 45px;
+            height: 45px;
         }
 
         .escrita-card {
             display: flex;
             flex-direction: column;
-            gap: 2px;
+            gap: 5px;
         }
+    }
+
+    .img1 {
+        right: 8%;
+        top: 13%;
+        width: 180px;
+    }
+
+    .img2 {
+        right: 38%;
+        top: 8%;
+        width: 180px;
+    }
+
+    .img3 {
+        right: 34%;
+        top: 2%;
+        width: 220px;
+    }
+
+    .img4 {
+        right: -2%;
+        top: 8%;
+        width: 250px;
+    }
+
+    .img5 {
+        right: 40%;
+        top: 15%;
+        width: 180px;
+    }
+
+    .img6 {
+        right: 5%;
+        top: 8%;
+    }
+
+    .img7 {
+        right: 40%;
+        top: 4%;
+        width: 170px;
+    }
+
+    .img8 {
+        right: 12%;
+        top: 7%;
+        width: 170px;
+    }
+
+    .img9 {
+        right: 30%;
+        top: 1%;
+        width: 230px;
+    }
+
+    .img10 {
+        right: 0%;
+        top: 8%;
+        width: 190px;
+    }
+
+    .img11 {
+        right: 37%;
+        top: 6%;
+        width: 190px;
+    }
+
+    .img12 {
+        right: 8%;
+        top: 8%;
+        width: 160px;
+    }
+
+    .img13 {
+        right: 42%;
+        top: 8%;
+        width: 160px;
+    }
+
+    .img14 {
+        right: 7%;
+        top: 12%;
+        width: 160px;
+    }
+
+    .img15 {
+        right: 45%;
+        top: 16%;
+        width: 180px;
+    }
+
+    .img16 {
+        right: 3%;
+        top: 4%;
+        width: 190px;
     }
 }
 
 .infos-home {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: center;
     margin-top: 30px;
-    padding: 0 40px;
+
     margin-bottom: 30px;
 
     .info {
+        width: 100%;
+        padding: 20px;
         display: flex;
         justify-content: center;
         flex-direction: column;
+        text-align: center;
+        align-items: center;
 
         h2 {
             font-size: 25px;
@@ -214,6 +352,7 @@ body {
 
         p {
             display: flex;
+            width: 80%;
             font-size: 14px;
             color: white;
             font-weight: bold;
@@ -222,63 +361,237 @@ body {
     }
 }
 
+
+
+
 .carrossel-home {
-    background-color: black;
-    height: 500px;
+    background-image: url(/imagens/card-fundo.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 550px;
+    position: relative;
+    overflow: hidden;
+
+    h1 {
+        font-family: "Montserrat";
+        margin-top: 10px;
+        font-size: 40px;
+        color: white;
+        text-align: center;
+        z-index: 10;
+
+        .span1-carrosel {
+            color: #F3F39C;
+        }
+
+        .span2-carrosel {
+            color: #D069FC;
+        }
+    }
+
+    .setas-carrossel {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 20;
+        pointer-events: none;
+
+        .left-seta {
+            position: absolute;
+            left: 2%;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: auto;
+        }
+
+        .right-seta {
+            position: absolute;
+            right: 2%;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: auto;
+        }
+    }
+
+    .caixas-carrossel {
+        width: 100%;
+        height: 480px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+    }
+.caixa {
+    position: absolute;
+    width: 220px;
+    height: 350px;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: 0.4s ease;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
+.caixa:nth-child(4) {
+    width: 260px;
+    height: 430px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 7;
+
+    border: 5px solid transparent;
+    background:
+        linear-gradient(#999, #999) padding-box,
+        linear-gradient(180deg, #FFC857, #E72D91, #6449D8) border-box;
+}
+
+.caixa:nth-child(3) {
+    left: 37%;
+    width: 220px;
+    height: 380px;
+    transform: translateX(-50%);
+    z-index: 6;
+}
+
+.caixa:nth-child(5) {
+    left: 63%;
+    width: 220px;
+    height: 380px;
+    transform: translateX(-50%);
+    z-index: 6;
+}
+
+.caixa:nth-child(2) {
+    left: 24%;
+    width: 205px;
+    height: 350px;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
+.caixa:nth-child(6) {
+    left: 76%;
+    width: 205px;
+    height: 350px;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
+.caixa:nth-child(1) {
+    left: 12%;
+    width: 190px;
+    height: 320px;
+    transform: translateX(-50%);
+    z-index: 4;
+}
+
+.caixa:nth-child(7) {
+    left: 88%;
+    width: 190px;
+    height: 320px;
+    transform: translateX(-50%);
+    z-index: 4;
+}
+}
+
+
+
+
 .promo-escrita {
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 50px;
+    color: #AC91CD;
     font-family: "Montserrat";
 }
 
 .overflow-home {
-
+    margin-left: 50px;
+    margin-top: 10px;
+    display: flex;
+    overflow-y: auto;
+    margin-bottom: 60px;
+    gap: 30px;
 
     .cards-promo {
         border: #AC91CD 1px solid;
         width: 250px;
-        height: 400px;
+        height: 430px;
         border-radius: 12px;
     }
 
-    .img-promo{
-        img{
+    .img-promo {
+        img {
             width: 250px;
+            padding: 14px;
         }
-        height: 70%;
+
+        height: 60%;
         border-bottom: 1px solid #AC91CD;
     }
 
-    .escrita-promo{
+    .escrita-promo {
         display: flex;
         flex-direction: column;
+        padding: 0 14px;
+        margin-top: 8px;
 
-        h4{
+        h4 {
             font-family: "Montserrat";
             color: white;
+            font-size: 19px;
         }
 
-        p{
+        p {
             color: white;
+            font-family: "Montserrat";
         }
 
-        h3{
+        h3 {
+            margin-top: 10px;
             color: white;
             font-family: "Press start 2P";
             text-decoration: line-through;
+            font-size: 12px;
         }
 
-        h2{
+        h2 {
+            margin-top: 8px;
             color: #F3F39C;
             font-family: "Press start 2P";
-
+            font-size: 18px;
         }
 
-        
+
     }
 
-    .btn-promo{
-        background-image: url(/imagens/botao-hero.png);
-        width: 200px;
+    .btn-promo {
+        display: flex;
+        justify-content: center;
+        margin-top: 8px;
+        margin-left: 10px;
+        width: 226px;
+        height: 50px;
+        text-decoration: none;
+        background-image: url(/imagens/Botão8.png);
+        object-fit: cover;
+
+        p {
+            color: white;
+            font-family: "MontSerrat";
+            margin-top: 9px;
+            font-size: 18px;
+            font-weight: bold;
+        }
     }
 }
