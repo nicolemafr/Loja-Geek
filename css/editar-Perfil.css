@@ -1,0 +1,71 @@
+.editar-container {
+    width: 1500px;
+    height: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    background-color: black;
+}
+
+
+.formulario-editar {
+    width: 800px;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    gap: 10px;
+    .foto-form {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 130px;
+        }
+
+        .lixeira {
+            position: absolute;
+            right: 0;
+            padding: 15px;
+            object-fit: contain;
+            width: 70px;
+            height: 70px;
+
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+
+
+    }
+
+    a {
+        display: flex;
+        gap: 12px;
+        background-image: url(/imagens/botao-hero.png);
+        height: 90px;
+        width: 400px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        font-family: "Montserrat";
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
+
+.avatar-editar {
+    width: 600px;
+    height: 400px;
+    background-color: white;
+}

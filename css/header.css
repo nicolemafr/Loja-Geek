@@ -221,9 +221,11 @@ header {
             }
 
             &.isOpen {
+                transition: ease-in 0.2s;
                 transform: translateY(0);
                 top: 90px  ;
             }
+
         }
     }
 }
