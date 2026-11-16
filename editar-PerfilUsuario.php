@@ -32,7 +32,7 @@
                 <input placeholder="Altere aqui sua senha" type="password" name="senha" id="senha" required>
             </form>
 
-            <a class="btn-alterar" href="">ALTERAR</a>
+            <div class="btn-editar"></div><a class="btn-alterar" href=""><p>ALTERAR</p></a>
             
         </div>
 
@@ -57,6 +57,14 @@
                 <img src="./imagens/avatar15.png" alt="">
                 <img src="./imagens/avatar16.png" alt="">
             </div>
+
+            <div class="btn-session">
+                <button class="btn-alterar" id="btn1">1</button>
+                <button class="btn-alterar" id="btn2">2</button>
+            </div>
+
+            <div class="btn-editar"></div><a class="btn-alterar" href=""><p>ALTERAR</p></a>
+
 
         </div>
 
