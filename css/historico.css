@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #181620;
+}
+
+.body{
+    margin-top: 75px;
+    padding: 25px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    h1{
+        font-family: 'Press Start 2P', display;
+        color: #F3F39C;
+    }
+
+    .pedido{
+        border: 2px solid #584E64;
+        display: flex;
+        align-items: center;
+        gap: 100px;
+        padding: 20px;
+
+        .info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 200px;
+
+            h2{
+                font-size: 20px;
+                font-weight: 600;
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+
+        .line{
+            width: 2px;
+            height: 75px;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        p{
+            font-size: 16px;
+        }
+
+        .preco{
+            font-weight: 900;
+            font-size: 18px;
+        }
+
+        .status{
+            color: #90CB77;
+            font-weight: 500;
+        }
+
+        .detalhes{
+            padding: 10px 20px;
+            border: 2px solid #584E64;
+            border-radius: 15px;
+        }
+    }
+}
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Press Start 2P', display;
+*/
