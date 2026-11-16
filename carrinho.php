@@ -20,24 +20,7 @@
 
     <section>
         <div class="itens">
-            <div class="produto">
-                <h2>Produto</h2>
-
-                <div class="item">
-                    <img src="imagens/produto1.png" alt="">
-
-                    <div>
-                        <h3>Funko Pop Sakura</h3>
-                        <h4>Funko Pop</h4>
-                    </div>
-                </div>
-            </div>
-
-            <div class="preco">
-                <h2>Preço</h2>
-
-                <h2>R$149,90</h2>
-            </div>
+            <h2>Produto</h2>
         </div>
 
         <div class="resumo">
@@ -47,3 +30,40 @@
 </body>
 
 </html>
+
+<!-- <div class="produto">
+                    <h2>Produto</h2>
+                    <div class="item">
+                        <img src="imagens/produto1.png" alt="">
+                        <div>
+                            <h3>Funko Pop Sakura</h3>
+                            <h4>Funko Pop</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="preco">
+                    <h2>Preço</h2>
+                    <h2>R$149,90</h2>
+                </div>
+
+                <div class="quantidade">
+                    <h2>Quantidade</h2>
+                    
+                    <div class="quanF">
+                        <button class="btn">-</button>
+                        <p>1</p>
+                        <button class="btn">+</button>
+                    </div>
+
+                    <img src="imagens/Group BTN.png" alt="">
+                </div>
+
+                <div class="total">
+                    <h2>Total</h2>
+                    <h2>R$149,90</h2>
+                </div>
+
+                <div class="lixo">
+                    <img src="imagens/Lixeira.png" alt="" class="lixo">
+                </div> -->

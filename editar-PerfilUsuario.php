@@ -23,7 +23,7 @@
                 <img class="lixeira" src="./imagens/Lixeira-perfil.png" alt="">
             </div>
 
-             <form method="POST">
+            <form method="POST">
                 <label for="">MUDAR NOME</label>
                 <input placeholder="Altere aqui o seu nome" type="text" name="nome" id="nome" required>
                 <label for="">MUDAR EMAIL</label>
@@ -32,8 +32,10 @@
                 <input placeholder="Altere aqui sua senha" type="password" name="senha" id="senha" required>
             </form>
 
-            <div class="btn-editar"></div><a class="btn-alterar" href=""><p>ALTERAR</p></a>
-            
+            <div class="btn-editar"></div><a class="btn-alterar" href="">
+                <p>ALTERAR</p>
+            </a>
+
         </div>
 
 
@@ -63,7 +65,9 @@
                 <button class="btn-alterar" id="btn2">2</button>
             </div>
 
-            <div class="btn-editar"></div><a class="btn-alterar" href=""><p>ALTERAR</p></a>
+            <div class="btn-editar"></div><a class="btn-alterar" href="">
+                <p>ALTERAR</p>
+            </a>
 
 
         </div>

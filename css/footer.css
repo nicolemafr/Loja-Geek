@@ -90,7 +90,7 @@ footer {
     .explore {
         display: flex;
         justify-content: center;
-        gap: 10px;
+        gap: 15px;
         flex-direction: column;
         color: whitesmoke;
         border-right: 2px solid #883CED;
@@ -110,7 +110,7 @@ footer {
         .institucional {
             display: flex;
             justify-content: center;
-            gap: 10px;
+            gap: 15px;
             flex-direction: column;
             color: whitesmoke;
             font-family: 'Montserrat', sans-serif;
@@ -141,7 +141,7 @@ footer {
 
     .redes {
         display: flex;
-        gap: 25px;
+        gap: 20px;
         border: none;
         padding: 0;
         align-items: center;
