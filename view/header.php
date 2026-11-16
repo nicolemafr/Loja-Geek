@@ -38,7 +38,8 @@ $paginaAtual = basename($_SERVER['PHP_SELF']);
 
         <button id="btnPerfil">
 
-            <img class="perfil-user" src="./imagens/perfil-user.png" alt="">
+            <img class="perfil-user" src="./imagens/Fundo-Perfil1.png" alt="">
+            <img class="avatar-header" src="./imagens/avatar11.png" alt="">
 
         </button>
 
@@ -57,19 +58,24 @@ $paginaAtual = basename($_SERVER['PHP_SELF']);
 
                 <div class="fotoUser-modal">
 
-                    <img src="./imagens/perfil-user.png" alt="">
-
+                    <img class="fundo-modal" src="./imagens/Fundo-Perfil1.png" alt="">
+                    <img class="avatar-modal" src="./imagens/avatar11.png" alt="">
                 </div>
 
             </div>
 
 
             <div class="modal-meio">
-
-                <a href="">
-                    EDITAR PERFIL
-                </a>
-
+                <div class="editar">
+                    <a href="/editar-PerfilUsuario.php">
+                        EDITAR PERFIL
+                    </a>
+                </div>
+                <div class="pedido">
+                    <a href="">
+                        MEUS PEDIDOS
+                    </a>
+                </div>
                 <div class="Sair">
 
                     <a href="">

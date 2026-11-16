@@ -1,0 +1,170 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap);
+
+body{
+    background-color: #181620;
+}
+
+.produto-container{
+    height: 600px;
+    background-color: black;
+}
+
+
+.avaliacoes-container{
+    display: flex;
+    gap: 30px;
+    padding: 0px 20px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+
+.titulo-avaliacao{
+    margin-top: 30px;
+    margin-left: 21px;
+    display: flex;
+    gap: 10px;
+    img{
+        width: 30px;
+        height: 30px;
+    }
+
+    h1{
+        color: white;
+        font-family: "Montserrat";
+    }
+}
+
+.avaliacao{
+    width: 530px;
+    height: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #211E2F;
+    border-radius: 12px;
+    color: white;
+
+    p{
+        font-family: "Montserrat";
+        font-weight: 500;
+    }
+
+    .avaliacao-cima{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+
+        .nome-avaliacao{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            h4{
+                font-family: "Press start 2p";
+                font-size: 12px;
+            }
+
+            img{
+                width: 20px;
+            }
+        }
+
+    }
+}
+
+.titulo-recomendacao{
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    h1{
+        font-weight: bold;
+        color: #AC91CD;
+        font-family: "Montserrat";
+    }
+}
+
+.overflow-recomendacao {
+    margin-left: 30px;
+    margin-top: 10px;
+    display: flex;
+    overflow-y: auto;
+    margin-bottom: 60px;
+    gap: 30px;
+
+    .cards-promo {
+        border: #AC91CD 1px solid;
+        width: 250px;
+        height: 430px;
+        border-radius: 12px;
+    }
+
+    .img-promo {
+        img {
+            width: 250px;
+            padding: 14px;
+        }
+
+        height: 60%;
+        border-bottom: 1px solid #AC91CD;
+    }
+
+    .escrita-promo {
+        display: flex;
+        flex-direction: column;
+        padding: 0 14px;
+        margin-top: 8px;
+
+        h4 {
+            font-family: "Montserrat";
+            color: white;
+            font-size: 19px;
+        }
+
+        p {
+            color: white;
+            font-family: "Montserrat";
+        }
+
+        h3 {
+            margin-top: 10px;
+            color: white;
+            font-family: "Press start 2P";
+            text-decoration: line-through;
+            font-size: 12px;
+        }
+
+        h2 {
+            margin-top: 8px;
+            color: #F3F39C;
+            font-family: "Press start 2P";
+            font-size: 18px;
+        }
+
+
+    }
+
+    .btn-promo {
+        display: flex;
+        justify-content: center;
+        margin-top: 8px;
+        margin-left: 10px;
+        width: 226px;
+        height: 50px;
+        text-decoration: none;
+        background-image: url(/imagens/Botão8.png);
+        object-fit: cover;
+
+        p {
+            color: white;
+            font-family: "MontSerrat";
+            margin-top: 9px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+}

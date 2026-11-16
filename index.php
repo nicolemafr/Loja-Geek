@@ -239,11 +239,53 @@
         </div>
         <div class="cards-promo">
             <div class="img-promo">
-                <img src="./img/funko1.png" alt="">
+                <img src="./img/decoracao1.png" alt="">
             </div>
             <div class="escrita-promo">
-                <h4>Funko Pop Sakura</h4>
-                <p>Naruto</p>
+                <h4>Luminária 9¾</h4>
+                <p>Harry Potter</p>
+                <h3>R$ 82,57</h3>
+                <h2>R$ 54,30</h2>
+            </div>
+            <a class="btn-promo" href="">
+                <p>SAIBA MAIS</p>
+            </a>
+        </div>
+        <div class="cards-promo">
+            <div class="img-promo">
+                <img src="./img/cartas11.png" alt="">
+            </div>
+            <div class="escrita-promo">
+                <h4>Baralho Pokémon</h4>
+                <p>Pokémon</p>
+                <h3>R$ 72,10</h3>
+                <h2>R$ 61,80</h2>
+            </div>
+            <a class="btn-promo" href="">
+                <p>SAIBA MAIS</p>
+            </a>
+        </div>
+        <div class="cards-promo">
+            <div class="img-promo">
+                <img src="./img/utensilio4.png" alt="">
+            </div>
+            <div class="escrita-promo">
+                <h4>Caneca One Piece</h4>
+                <p>Utensílios</p>
+                <h3>R$ 86,70</h3>
+                <h2>R$ 67,30</h2>
+            </div>
+            <a class="btn-promo" href="">
+                <p>SAIBA MAIS</p>
+            </a>
+        </div>
+        <div class="cards-promo">
+            <div class="img-promo">
+                <img src="./img/cosplay9.png" alt="">
+            </div>
+            <div class="escrita-promo">
+                <h4>Fantasia AOT</h4>
+                <p>Cosplay</p>
                 <h3>R$ 149,90</h3>
                 <h2>R$ 93,50</h2>
             </div>
@@ -253,13 +295,13 @@
         </div>
         <div class="cards-promo">
             <div class="img-promo">
-                <img src="./img/funko1.png" alt="">
+                <img src="./img/cartas8.png" alt="">
             </div>
             <div class="escrita-promo">
-                <h4>Funko Pop Sakura</h4>
+                <h4>Cartas Naruto</h4>
                 <p>Naruto</p>
-                <h3>R$ 149,90</h3>
-                <h2>R$ 93,50</h2>
+                <h3>R$ 54,90</h3>
+                <h2>R$ 32,99</h2>
             </div>
             <a class="btn-promo" href="">
                 <p>SAIBA MAIS</p>
@@ -267,13 +309,13 @@
         </div>
         <div class="cards-promo">
             <div class="img-promo">
-                <img src="./img/funko1.png" alt="">
+                <img src="./img/funko2.png" alt="">
             </div>
             <div class="escrita-promo">
-                <h4>Funko Pop Sakura</h4>
-                <p>Naruto</p>
-                <h3>R$ 149,90</h3>
-                <h2>R$ 93,50</h2>
+                <h4>Funko Pop Batman</h4>
+                <p>Heróis</p>
+                <h3>R$ 179,90</h3>
+                <h2>R$ 109,99</h2>
             </div>
             <a class="btn-promo" href="">
                 <p>SAIBA MAIS</p>
@@ -281,13 +323,13 @@
         </div>
         <div class="cards-promo">
             <div class="img-promo">
-                <img src="./img/funko1.png" alt="">
+                <img src="./img/utensilio6.png" alt="">
             </div>
             <div class="escrita-promo">
-                <h4>Funko Pop Sakura</h4>
-                <p>Naruto</p>
-                <h3>R$ 149,90</h3>
-                <h2>R$ 93,50</h2>
+                <h4>Necessair Marvel</h4>
+                <p>Marvel</p>
+                <h3>R$ 129,90</h3>
+                <h2>R$ 83,50</h2>
             </div>
             <a class="btn-promo" href="">
                 <p>SAIBA MAIS</p>
@@ -295,55 +337,13 @@
         </div>
         <div class="cards-promo">
             <div class="img-promo">
-                <img src="./img/funko1.png" alt="">
+                <img src="./img/funko14.png" alt="">
             </div>
             <div class="escrita-promo">
-                <h4>Funko Pop Sakura</h4>
-                <p>Naruto</p>
-                <h3>R$ 149,90</h3>
-                <h2>R$ 93,50</h2>
-            </div>
-            <a class="btn-promo" href="">
-                <p>SAIBA MAIS</p>
-            </a>
-        </div>
-        <div class="cards-promo">
-            <div class="img-promo">
-                <img src="./img/funko1.png" alt="">
-            </div>
-            <div class="escrita-promo">
-                <h4>Funko Pop Sakura</h4>
-                <p>Naruto</p>
-                <h3>R$ 149,90</h3>
-                <h2>R$ 93,50</h2>
-            </div>
-            <a class="btn-promo" href="">
-                <p>SAIBA MAIS</p>
-            </a>
-        </div>
-        <div class="cards-promo">
-            <div class="img-promo">
-                <img src="./img/funko1.png" alt="">
-            </div>
-            <div class="escrita-promo">
-                <h4>Funko Pop Sakura</h4>
-                <p>Naruto</p>
-                <h3>R$ 149,90</h3>
-                <h2>R$ 93,50</h2>
-            </div>
-            <a class="btn-promo" href="">
-                <p>SAIBA MAIS</p>
-            </a>
-        </div>
-        <div class="cards-promo">
-            <div class="img-promo">
-                <img src="./img/funko1.png" alt="">
-            </div>
-            <div class="escrita-promo">
-                <h4>Funko Pop Sakura</h4>
-                <p>Naruto</p>
-                <h3>R$ 149,90</h3>
-                <h2>R$ 93,50</h2>
+                <h4>Funko Pop Gojo</h4>
+                <p>Funko Pop</p>
+                <h3>R$ 219,90</h3>
+                <h2>R$ 169,99</h2>
             </div>
             <a class="btn-promo" href="">
                 <p>SAIBA MAIS</p>

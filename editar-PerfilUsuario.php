@@ -19,8 +19,9 @@
 
         <div class="formulario-editar">
             <div class="foto-form">
-                <img src="./imagens/perfil-user.png" alt="">
-                <img class="lixeira" src="./imagens/Lixeira-perfil.png" alt="">
+                <img src="./imagens/Fundo-Perfil1.png" alt="">
+                <img class="avatarzinho" src="./imagens/avatar11.png" alt="">
+                <a class="lixeira" href=""><img src="./imagens/Lixeira-perfil.png" alt=""></a>
             </div>
 
              <form method="POST">
@@ -40,26 +41,26 @@
         <div class="avatar-editar">
 
             <div class="fotos-perfil">
-                <img src="./imagens/avatar1.png" alt="">
-                <img src="./imagens/avatar2.png" alt="">
-                <img src="./imagens/avatar3.png" alt="">
-                <img src="./imagens/avatar4.png" alt="">
-                <img src="./imagens/avatar5.png" alt="">
-                <img src="./imagens/avatar6.png" alt="">
-                <img src="./imagens/avatar7.png" alt="">
-                <img src="./imagens/avatar8.png" alt="">
-                <img src="./imagens/avatar9.png" alt="">
-                <img src="./imagens/avatar10.png" alt="">
-                <img src="./imagens/avatar11.png" alt="">
-                <img src="./imagens/avatar12.png" alt="">
-                <img src="./imagens/avatar13.png" alt="">
-                <img src="./imagens/avatar14.png" alt="">
-                <img src="./imagens/avatar15.png" alt="">
-                <img src="./imagens/avatar16.png" alt="">
+                <img class="avatar" src="./imagens/avatar1.png" alt="">
+                <img class="avatar" src="./imagens/avatar2.png" alt="">
+                <img class="avatar" src="./imagens/avatar3.png" alt="">
+                <img class="avatar" src="./imagens/avatar4.png" alt="">
+                <img class="avatar" src="./imagens/avatar5.png" alt="">
+                <img class="avatar" src="./imagens/avatar6.png" alt="">
+                <img class="avatar" src="./imagens/avatar7.png" alt="">
+                <img class="avatar" src="./imagens/avatar8.png" alt="">
+                <img class="avatar" src="./imagens/avatar9.png" alt="">
+                <img class="avatar" src="./imagens/avatar10.png" alt="">
+                <img class="avatar" src="./imagens/avatar11.png" alt="">
+                <img class="avatar" src="./imagens/avatar12.png" alt="">
+                <img class="avatar" src="./imagens/avatar13.png" alt="">
+                <img class="avatar" src="./imagens/avatar14.png" alt="">
+                <img class="avatar" src="./imagens/avatar15.png" alt="">
+                <img class="avatar" src="./imagens/avatar16.png" alt="">
             </div>
 
             <div class="btn-session">
-                <button class="btn-alterar" id="btn1">1</button>
+                <button class="btn-alterar ativo" id="btn1">1</button>
                 <button class="btn-alterar" id="btn2">2</button>
             </div>
 
@@ -75,5 +76,7 @@
 
 
 </body>
+
+<script src="./assets/botoesEditar-Perfil.js"></script>
 
 </html>
