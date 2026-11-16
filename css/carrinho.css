@@ -38,16 +38,50 @@ section{
     padding: 50px;
 }
 
+
 .itens{
     border: 2px solid #AC91CD;
-    background-color: #180D35;
     width: 50%;
+    height: 100px;
     background-color: #282632;
-    padding: 25px;
-    border-radius: 10px;
-    display: flex;
+    padding: 15px;
+    border-radius: 15px;
 
-    .produto{
+    .itens-info{
+        display: flex;
+        gap: 25px;
+        align-items: center;
+        justify-content: space-around;
+        color: white;
+
+        h2{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+        }
+    }
+
+    .item{
+        display: flex;
+        flex-direction: column;
+
+        .produto{
+            display: flex;
+            align-items: center;
+            img{
+                width: 50px;
+            }
+        }
+    }
+}
+
+.resumo{
+    border: 2px solid #AC91CD;
+    width: 50%;
+    height: 100px;
+    background-color: #282632;
+}
+
+/* .produto{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -71,7 +105,7 @@ section{
             padding: 10px;
 
             img{
-                width: 100px;
+                width: 50px;
             }
 
             h3{
@@ -84,7 +118,7 @@ section{
         }
     }
 
-    .preco{
+    .preco, .total{
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -93,16 +127,59 @@ section{
         h2{
             font-weight: 600;
             font-family: 'Montserrat', sans-serif;
-            width: 230px;
-            height: 70px;
+            height: 50px;
             color: white;
         }
     }
-}
 
-.resumo{
-    border: 2px solid #AC91CD;
-    width: 50%;
-    height: 100px;
-    background-color: #282632;
-}
+    .quantidade{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h2{
+            font-weight: 600;
+            font-family: 'Montserrat', sans-serif;
+            height: 50px;
+            color: white;
+            margin-bottom: -10px;
+        }
+
+        .quanF{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 3;
+            gap: 20px;
+            background-size: cover;
+
+            .btn{
+                padding: 10px 15px;
+                font-size: 25px;
+                border: none;
+                background: transparent;
+                cursor: pointer;
+                color: white;
+                font-weight: 900;
+            }
+
+            p{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 26px;
+                color: white;
+                font-weight: 700;
+            }
+        }
+
+        img{
+            margin-top: -67px;
+            z-index: 1;
+            width: 147px;
+        }
+    }
+
+    .lixo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } */
