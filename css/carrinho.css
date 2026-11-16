@@ -40,18 +40,43 @@ section{
 
 
 .itens{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    width: 50%;
     border: 2px solid #AC91CD;
+    width: 50%;
+    height: 100px;
     background-color: #282632;
-    padding: 25px;
-    border-radius: 14px;
+    padding: 15px;
+    border-radius: 15px;
+
+    .itens-info{
+        display: flex;
+        gap: 25px;
+        align-items: center;
+        justify-content: space-around;
+        color: white;
+
+        h2{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+        }
+    }
+
+    .item{
+        display: flex;
+        flex-direction: column;
+
+        .produto{
+            display: flex;
+            align-items: center;
+            img{
+                width: 50px;
+            }
+        }
+    }
 }
 
 .resumo{
     border: 2px solid #AC91CD;
-    width: 40%;
+    width: 50%;
     height: 100px;
     background-color: #282632;
 }

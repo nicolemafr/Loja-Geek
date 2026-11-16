@@ -20,7 +20,22 @@
 
     <section>
         <div class="itens">
-            <h2>Produto</h2>
+            <div class="itens-info">
+                <h2>Produto</h2>
+                <h2>Preço</h2>
+                <h2>Quantidade</h2>
+                <h2>Total</h2>
+            </div>
+
+            <div class="item">
+                <div class="produto">
+                    <img src="imagens/produto1.png" alt="">
+                    <div>
+                        <h3>Funko Pop Sakura</h3>
+                        <h4>Funko Pop </h4>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="resumo">
