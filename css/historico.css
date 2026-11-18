@@ -11,7 +11,7 @@ body {
     background-color: #181620;
 }
 
-.body{
+.body {
     margin-top: 75px;
     padding: 25px;
     color: white;
@@ -20,54 +20,55 @@ body {
     flex-direction: column;
     gap: 10px;
 
-    h1{
+    h1 {
         font-family: 'Press Start 2P', display;
         color: #F3F39C;
     }
 
-    .pedido{
+    .pedido {
         border: 2px solid #584E64;
         display: flex;
         align-items: center;
         gap: 100px;
         padding: 20px;
 
-        .info{
+        .info {
             display: flex;
             flex-direction: column;
             justify-content: center;
             width: 200px;
 
-            h2{
+            h2 {
                 font-size: 20px;
                 font-weight: 600;
             }
-            p{
+
+            p {
                 font-size: 18px;
             }
         }
 
-        .line{
+        .line {
             width: 2px;
             height: 75px;
             background-color: rgba(255, 255, 255, 0.5);
         }
 
-        p{
+        p {
             font-size: 16px;
         }
 
-        .preco{
+        .preco {
             font-weight: 900;
             font-size: 18px;
         }
 
-        .status{
+        .status {
             color: #90CB77;
             font-weight: 500;
         }
 
-        .detalhes{
+        .detalhes {
             padding: 10px 20px;
             border: 2px solid #584E64;
             border-radius: 15px;

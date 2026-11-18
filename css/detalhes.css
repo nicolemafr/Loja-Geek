@@ -1,0 +1,161 @@
+@import url(https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #181620;
+}
+
+.body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 25px;
+    margin-top: 90px;
+    padding: 25px;
+
+    h1 {
+        color: #F3F39C;
+        font-family: 'Press Start 2P', display;
+        margin-bottom: 10px;
+    }
+
+    .pedido {
+        width: 100%;
+        display: flex;
+        border: 2px #696671 solid;
+        padding: 20px 25px;
+        border-radius: 10px;
+
+        .info {
+            width: 425px;
+            border-right: 2px #696671 solid;
+            margin-right: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            div {
+                h3 {
+                    font-weight: 500;
+                    font-family: 22px;
+                }
+
+                display: flex;
+                align-items: center;
+                gap: 15px;
+
+                span {
+                    font-weight: 600;
+                    color: #90CB77;
+                }
+            }
+        }
+
+        .pago {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+
+    .item {
+        width: 100%;
+        display: flex;
+        border: 2px #696671 solid;
+        padding: 25px;
+        border-radius: 10px;
+        flex-direction: column;
+
+        h2 {
+            font-weight: 500;
+            font-size: 18px;
+        }
+
+        .produto {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .info-produ {
+                display: flex;
+                gap: 15px;
+
+                img {
+                    width: 100px;
+                    background: url(../imagens/Fundo-detalhes.png);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+
+                h1 {
+                    font-family: 'Montserrat', sans-serif;
+                    color: white;
+                    
+                    width: 370px;
+                    font-weight: 600;
+                }
+                h2{
+                    color: #F3F39C;
+                }
+            }
+
+            .info-produ2{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: -50px;
+                p{
+                    text-align: right;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .pagamento{
+        width: 100%;
+        display: flex;
+        border: 2px #696671 solid;
+        padding: 25px;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: space-between;
+
+        div{
+            display: flex;
+            gap: 18px;
+            flex-direction: column;
+
+            h3{
+                font-weight: 600;
+            }
+
+            p{
+                color: #AC91CD;
+                border: none;
+            }
+        }
+
+        p{
+            color: #B3C992;
+            border: 2px #B3C992 solid;
+            padding: 5px 15px;
+            border-radius: 10px;
+        }
+    }
+}
+
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Press Start 2P', display; */
