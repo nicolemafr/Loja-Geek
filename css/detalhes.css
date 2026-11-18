@@ -102,20 +102,22 @@ body {
                 h1 {
                     font-family: 'Montserrat', sans-serif;
                     color: white;
-                    
+
                     width: 370px;
                     font-weight: 600;
                 }
-                h2{
+
+                h2 {
                     color: #F3F39C;
                 }
             }
 
-            .info-produ2{
+            .info-produ2 {
                 display: flex;
                 flex-direction: column;
                 margin-bottom: -50px;
-                p{
+
+                p {
                     text-align: right;
                     font-size: 20px;
                 }
@@ -123,7 +125,7 @@ body {
         }
     }
 
-    .pagamento{
+    .pagamento {
         width: 100%;
         display: flex;
         border: 2px #696671 solid;
@@ -132,22 +134,22 @@ body {
         align-items: center;
         justify-content: space-between;
 
-        div{
+        div {
             display: flex;
             gap: 18px;
             flex-direction: column;
 
-            h3{
+            h3 {
                 font-weight: 600;
             }
 
-            p{
+            p {
                 color: #AC91CD;
                 border: none;
             }
         }
 
-        p{
+        p {
             color: #B3C992;
             border: 2px #B3C992 solid;
             padding: 5px 15px;
