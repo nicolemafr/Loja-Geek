@@ -60,7 +60,32 @@
         </div>
 
         <div class="resumo">
+            <h2>Resumo do pedido</h2>
 
+            <div class="bordas">
+                <div class="sub">
+                    <h4>Subtotal</h4>
+                    <p>R$309,70</p>
+                </div>
+                <div class="entrega">
+                    <h4>Entrega</h4>
+                    <p>R$15,90</p>
+                </div>
+            </div>
+
+            <div class="Rtotal">
+                <h3>Total</h3>
+
+                <p class="totalp">R$325,60</p>
+            </div>
+
+            <div class="Rbotao">
+                <img src="imagens/botao-editar.png" alt="">
+
+                <button type="button">
+                    FINALIZAR PEDIDO
+                </button>
+            </div>
         </div>
     </section>
 </body>
