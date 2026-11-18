@@ -25,16 +25,37 @@
                 <h2>Preço</h2>
                 <h2>Quantidade</h2>
                 <h2>Total</h2>
+                <span></span>
             </div>
 
             <div class="item">
+
                 <div class="produto">
-                    <img src="imagens/produto1.png" alt="">
-                    <div>
-                        <h3>Funko Pop Sakura</h3>
-                        <h4>Funko Pop </h4>
-                    </div>
+                    <section class="prodinfo">
+                        <img src="imagens/produto1.png" alt="Funko Pop Sakura">
+
+                        <div>
+                            <h3>Funko Pop Sakura</h3>
+                            <h4>Funko Pop</h4>
+                        </div>
+                    </section>
                 </div>
+
+                <span class="preco">R$149,99</span>
+
+                <div class="quantidade">
+                    <img src="imagens/Botao-carrinho.png" alt="">
+
+                    <button type="button">-</button>
+                    <span>1</span>
+                    <button type="button">+</button>
+                </div>
+
+                <span class="total">R$149,99</span>
+
+                <button class="excluir" type="button" aria-label="Excluir produto">
+                    <img src="imagens/Lixeira.png" alt="">
+                </button>
             </div>
         </div>
 
@@ -45,40 +66,3 @@
 </body>
 
 </html>
-
-<!-- <div class="produto">
-                    <h2>Produto</h2>
-                    <div class="item">
-                        <img src="imagens/produto1.png" alt="">
-                        <div>
-                            <h3>Funko Pop Sakura</h3>
-                            <h4>Funko Pop</h4>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="preco">
-                    <h2>Preço</h2>
-                    <h2>R$149,90</h2>
-                </div>
-
-                <div class="quantidade">
-                    <h2>Quantidade</h2>
-                    
-                    <div class="quanF">
-                        <button class="btn">-</button>
-                        <p>1</p>
-                        <button class="btn">+</button>
-                    </div>
-
-                    <img src="imagens/Group BTN.png" alt="">
-                </div>
-
-                <div class="total">
-                    <h2>Total</h2>
-                    <h2>R$149,90</h2>
-                </div>
-
-                <div class="lixo">
-                    <img src="imagens/Lixeira.png" alt="" class="lixo">
-                </div> -->
