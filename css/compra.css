@@ -76,6 +76,7 @@ body {
     justify-content: center;
     flex-direction: column;
     gap: 25px;
+    position: relative;
 
     h2 {
         font-size: 20px;
@@ -113,8 +114,11 @@ body {
     .cep {
         color: white;
         font-family: 'Montserrat', sans-serif;
-        font-size: 14px;
+        font-size: 16px;
         text-decoration: underline;
+        position: absolute;
+        right: -250px;
+        bottom: 60px;
     }
 }
 
@@ -164,28 +168,33 @@ body {
     }
 }
 
-button {
-    display: block;
-    margin: 25px auto;
-    width: 400px;
-    height: 50px;
-    background: transparent;
-    border: none;
+.finalizar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    z-index: 2;
-    color: white;
-    font-weight: 900;
-    font-family: 'Montserrat', sans-serif;
-    cursor: pointer;
-}
+    margin: 25px;
 
-.BotaoF {
-    background-image: url(../imagens/BotaoF.png);
-    position: absolute;
-    background-size: cover;
-    width: 425px;
-    height: 60px;
-    left: 550px;
-    bottom: -45px;
-    z-index: 1;
+    img {
+        position: absolute;
+        width: 350px;
+        height: 60px;
+        bottom: -5px;
+        z-index: 0;
+    }
+
+    button {
+        width: 350px;
+        height: 60px;
+        z-index: 1;
+        border-radius: 10px;
+        background: transparent;
+        border: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        color: white;
+        font-size: 18px;
+        letter-spacing: 1.5px;
+        cursor: pointer;
+    }
 }

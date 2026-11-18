@@ -7,13 +7,10 @@ header {
     display: flex;
     top: 0;
     position: fixed;
-
     width: 100%;
     z-index: 15;
-
     justify-content: space-between;
     align-items: center;
-
     background-color: black;
 
     nav {
@@ -171,16 +168,16 @@ header {
                     }
                 }
 
-                .fotoUser-modal{
+                .fotoUser-modal {
                     display: flex;
                     position: relative;
 
-                    .fundo-modal{
+                    .fundo-modal {
                         width: 80px;
                         height: 80px;
                     }
 
-                    .avatar-modal{
+                    .avatar-modal {
                         position: absolute;
                         width: 40px;
                         height: 40px;
@@ -193,17 +190,18 @@ header {
             .modal-meio {
 
 
-                .pedido{
+                .pedido {
                     padding: 10px 0;
                     border-top: #B895D6 1px solid;
                     border-bottom: #B895D6 1px solid;
                 }
 
-                
+
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
                 justify-content: center;
+
                 a {
                     margin-left: 10px;
                     text-decoration: none;

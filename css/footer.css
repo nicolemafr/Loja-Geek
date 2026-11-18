@@ -65,9 +65,11 @@ footer {
             display: flex;
             justify-content: center;
             align-items: center;
-            img{
+
+            img {
                 width: 25px;
             }
+
             cursor: pointer;
         }
     }
@@ -128,11 +130,12 @@ footer {
             border: none;
             padding: 0;
 
-            p{
+            p {
                 display: flex;
                 align-items: center;
                 gap: 10px;
-                img{
+
+                img {
                     width: 25px;
                 }
             }
@@ -172,7 +175,7 @@ footer {
         }
     }
 
-    img{
-        width: 350px;
+    img {
+        width: 220px;
     }
 }

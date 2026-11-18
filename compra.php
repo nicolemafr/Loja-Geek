@@ -60,8 +60,13 @@
         </div>
     </div>
 
-    <button type="submit">FINALIZAR COMPRA</button>
-    <div class="BotaoF"></div>
+    <div class="finalizar">
+        <button type="submit">FINALIZAR COMPRA</button>
+
+        <img src="imagens/botao-editar.png" alt="">
+    </div>
+
+    <?php include "./view/footer.php" ?>
 </body>
 
 </html>
