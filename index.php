@@ -42,7 +42,9 @@
     </div>
 
     <div class="cards-container">
-        <div class="card-titulo"><h1>CATEGORIAS</h1></div>
+        <div class="card-titulo">
+            <h1>CATEGORIAS</h1>
+        </div>
         <div class="cards">
             <div class="card">
                 <div class="img-card">
@@ -198,7 +200,7 @@
                 <img src="https://placehold.co/200x300" alt="">
             </div>
             <div class="caixa">
-                <img src="https://placehold.co/200x300" alt="">
+                <video src="./videos/unboxing-naruto.mp4" controls loop></video>
             </div>
             <div class="caixa">
                 <img src="https://placehold.co/200x300" alt="">
@@ -212,8 +214,8 @@
         </div>
 
         <div class="setas-carrossel">
-            <img class="left-seta" id="" src="./imagens/left.png" alt="">
-            <img class="right-seta" id="" src="./imagens/right.png" alt="">
+            <img class="left-seta" id="left-seta" src="./imagens/left.png" alt="">
+            <img class="right-seta" id="right-seta" src="./imagens/right.png" alt="">
         </div>
 
     </div>
@@ -350,8 +352,9 @@
             </a>
         </div>
     </div>
-
     <?php include "./view/footer.php" ?>
+
+    <script src="./assets/carrossel-home.js"></script>
 </body>
 
 </html>
