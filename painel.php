@@ -15,11 +15,11 @@
     <div class="body">
         <div class="nav">
             <nav>
-                <p class="selected">Painel</p>
-                <p>Usuários</p>
-                <p>Categorias</p>
-                <p>Pedidos</p>
-                <p>Produtos</p>
+                <a class="selected" href="painel.php">Painel</a>
+                <a href="usuários.php">Usuários</a>
+                <a href="">Categorias</a>
+                <a href="">Pedidos</a>
+                <a href="">Produtos</a>
 
                 <button type="button">Sair</button>
             </nav>
@@ -80,8 +80,8 @@
                     <p class="em-estoque">Em estoque</p>
 
                     <div class="acoes">
-                        <img src="imagens-adim/Editar.png" alt="Editar">
-                        <img src="imagens-adim/Lixeira.png" alt="Excluir">
+                        <img src="imagens-adim/Caneta-Editar.png" alt="Editar">
+                        <img src="imagens-adim/Lixeira-perfil.png" alt="Excluir">
                     </div>
 
                 </div>

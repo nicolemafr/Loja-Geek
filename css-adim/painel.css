@@ -24,7 +24,8 @@ body {
             flex-direction: column;
         }
 
-        p {
+        a {
+            text-decoration: none;
             font-family: 'Montserrat', sans-serif;
             font-size: 20px;
             color: white;
