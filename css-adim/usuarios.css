@@ -74,7 +74,11 @@ body {
             border: 1px solid #AC91CD;
             border-radius: 15px;
             overflow: hidden;
+            overflow-y: scroll;
             font-family: 'Montserrat', sans-serif;
+            max-height: 75%;
+            scrollbar-width: thin;
+            scrollbar-color: #AC91CD #282632;
         }
 
         .info,

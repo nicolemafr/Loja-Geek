@@ -151,8 +151,13 @@ body {
             background-color: #282632;
             border: 1px solid #AC91CD;
             border-radius: 15px;
-            overflow: hidden;
             font-family: 'Montserrat', sans-serif;
+            overflow: hidden;
+            overflow-y: scroll;
+            font-family: 'Montserrat', sans-serif;
+            max-height: 65%;
+            scrollbar-width: thin;
+            scrollbar-color: #AC91CD #282632;
         }
 
         .info,
