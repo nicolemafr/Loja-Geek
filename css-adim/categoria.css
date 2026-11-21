@@ -78,6 +78,7 @@ body {
 
             .caixa {
                 width: 350px;
+                text-decoration: none;
                 height: 350px;
                 border: 2px solid #AC91CD;
                 border-radius: 25px;

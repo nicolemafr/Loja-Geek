@@ -29,7 +29,7 @@
             <h1>GERENCIAR CATEGORIAS</h1>
 
             <div class="caixas">
-                <div class="caixa">
+                <a href="editar-categorias.php" class="caixa">
                     <div class="Fundo">
                         <img src="imagens-adim/Manga9-2.png" alt="" class="F1">
                         <img src="imagens-adim/Manga15-2.png" alt="" class="F2">
@@ -43,9 +43,9 @@
 
                         <img src="imagens-adim/Botão add.png" alt="">
                     </div>
-                </div>
+                </a>
 
-                <div class="caixa">
+                <a href="editar-categorias.php" class="caixa">
                     <div class="Fundo">
                         <img src="imagens-adim/Manga9-2.png" alt="" class="F1">
                         <img src="imagens-adim/Manga15-2.png" alt="" class="F2">
@@ -59,9 +59,9 @@
 
                         <img src="imagens-adim/Botão add.png" alt="">
                     </div>
-                </div>
+                </a>
 
-                <div class="caixa">
+                <a href="editar-categorias.php" class="caixa">
                     <div class="Fundo">
                         <img src="imagens-adim/Manga9-2.png" alt="" class="F1">
                         <img src="imagens-adim/Manga15-2.png" alt="" class="F2">
@@ -75,9 +75,9 @@
 
                         <img src="imagens-adim/Botão add.png" alt="">
                     </div>
-                </div>
+                </a>
 
-                <div class="caixa">
+                <a href="editar-categorias.php" class="caixa">
                     <div class="Fundo">
                         <img src="imagens-adim/Manga9-2.png" alt="" class="F1">
                         <img src="imagens-adim/Manga15-2.png" alt="" class="F2">
@@ -91,9 +91,9 @@
 
                         <img src="imagens-adim/Botão add.png" alt="">
                     </div>
-                </div>
+                </a>
 
-                <div class="caixa">
+                <a href="editar-categorias.php" class="caixa">
                     <div class="Fundo">
                         <img src="imagens-adim/Manga9-2.png" alt="" class="F1">
                         <img src="imagens-adim/Manga15-2.png" alt="" class="F2">
@@ -107,9 +107,9 @@
 
                         <img src="imagens-adim/Botão add.png" alt="">
                     </div>
-                </div>
+                </a>
 
-                <div class="caixa">
+                <a href="editar-categorias.php" class="caixa">
                     <div class="Fundo">
                         <img src="imagens-adim/Manga9-2.png" alt="" class="F1">
                         <img src="imagens-adim/Manga15-2.png" alt="" class="F2">
@@ -123,9 +123,9 @@
 
                         <img src="imagens-adim/Botão add.png" alt="">
                     </div>
-                </div>
+                </a>
 
-                <div class="caixa">
+                <a href="editar-categorias.php" class="caixa">
                     <div class="Fundo">
                         <img src="imagens-adim/Manga9-2.png" alt="" class="F1">
                         <img src="imagens-adim/Manga15-2.png" alt="" class="F2">
@@ -139,9 +139,9 @@
 
                         <img src="imagens-adim/Botão add.png" alt="">
                     </div>
-                </div>
+                </a>
 
-                <div class="caixa">
+                <a href="editar-categorias.php" class="caixa">
                     <div class="Fundo">
                         <img src="imagens-adim/Manga9-2.png" alt="" class="F1">
                         <img src="imagens-adim/Manga15-2.png" alt="" class="F2">
@@ -155,7 +155,7 @@
 
                         <img src="imagens-adim/Botão add.png" alt="">
                     </div>
-                </div>
+                </a>
             </div>
         </main>
     </div>

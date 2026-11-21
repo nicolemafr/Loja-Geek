@@ -64,7 +64,7 @@
                     <p>QUANTIDADE</p>
                     <p>STATUS</p>
                     <p>AÇÕES</p>
-                </div>
+                </div> 
 
                 <div class="itens">
 
