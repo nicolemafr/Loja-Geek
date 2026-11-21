@@ -1,5 +1,5 @@
 <header>
-    <img src="../imagens-adim/LogoF.png" alt="">
+    <img src="../imagens-adim/LogoF.png" alt="" class="logo">
 
     <div class="user">
         <p>ADMINISTRADOR</p>

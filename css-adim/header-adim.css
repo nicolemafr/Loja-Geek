@@ -1,10 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap);
 
-body {
-    background-color: #181620;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -20,9 +16,10 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: black;
-    padding: 20px;
+    padding: 10px;
 
-    img {
+    .logo {
+        margin-left: 50px;
         width: 100px;
     }
 
@@ -33,12 +30,14 @@ header {
         align-items: center;
         gap: 25px;
         justify-content: center;
+        margin-right: 50px;
+
+        p{
+            color: #F3F39C;
+        }
 
         img {
             width: 50px;
         }
     }
 }
-
-/* font-family: 'Press Start 2P', display;
-font-family: 'Montserrat', sans-serif; */
