@@ -57,7 +57,35 @@
             </div>
 
             <div class="tabela">
-                
+
+                <div class="info">
+                    <p>PRODUTO</p>
+                    <p>CATEGORIA</p>
+                    <p>QUANTIDADE</p>
+                    <p>STATUS</p>
+                    <p>AÇÕES</p>
+                </div>
+
+                <div class="itens">
+
+                    <div class="produto">
+                        <img src="imagens-adim/perfil-user.png" alt="">
+                        <p>Camiseta NIKA</p>
+                    </div>
+
+                    <p>Vestuário</p>
+
+                    <p class="quantidade">20</p>
+
+                    <p class="em-estoque">Em estoque</p>
+
+                    <div class="acoes">
+                        <img src="imagens-adim/Editar.png" alt="Editar">
+                        <img src="imagens-adim/Lixeira.png" alt="Excluir">
+                    </div>
+
+                </div>
+
             </div>
         </main>
     </div>
