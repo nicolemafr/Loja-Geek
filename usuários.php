@@ -37,7 +37,7 @@
                     <p class="del">DELETAR</p>
                 </div>
 
-                <div class="itens">
+                <a href="historico.php" class="itens">
                     <p>001</p>
 
                     <p>Sofia Rodrigues</p>
@@ -47,9 +47,9 @@
                     <p class="tipo"> <span></span> Administrador</p>
 
                     <img src="imagens-adim/Lixeira-perfil.png" alt="Excluir">
-                </div>
+                </a>
 
-                <div class="itens">
+                <a  href="historico.php" class="itens">
                     <p>001</p>
 
                     <p>Sofia Rodrigues</p>
@@ -59,7 +59,7 @@
                     <p class="tipo"> <span></span> Administrador</p>
 
                     <img src="imagens-adim/Lixeira-perfil.png" alt="Excluir">
-                </div>
+                </a>
             </div>
         </main>
     </div>
