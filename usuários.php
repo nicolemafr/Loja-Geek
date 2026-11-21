@@ -17,9 +17,9 @@
             <nav>
                 <a href="painel.php">Painel</a>
                 <a class="selected" href="usuários.php">Usuários</a>
-                <a href="">Categorias</a>
-                <a href="">Pedidos</a>
-                <a href="">Produtos</a>
+                <a href="categorias.php">Categorias</a>
+                <a href="pedidos.php">Pedidos</a>
+                <a href="produtos.php">Produtos</a>
 
                 <button type="button">Sair</button>
             </nav>
