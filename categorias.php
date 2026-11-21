@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css-adim/header-adim.css">
     <link rel="stylesheet" href="css-adim/categoria.css">
-    <title>Painel de Estoques</title>
+    <title>Categorias</title>
 </head>
 
 <body>
