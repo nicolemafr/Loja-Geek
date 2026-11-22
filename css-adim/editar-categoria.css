@@ -66,6 +66,9 @@ body {
         h1 {
             color: #F3F39C;
             font-family: 'Press Start 2P', display;
+            display: flex;
+            align-items: center;
+            gap: 25px;
         }
 
         .adicionar {

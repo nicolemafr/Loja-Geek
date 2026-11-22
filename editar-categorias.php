@@ -26,7 +26,7 @@
         </div>
 
         <main>
-            <h1> <img src="imagens-adim/left.png" alt=""> EDITAR MANGÁS</h1>
+            <h1> <a href="categorias.php"><img src="imagens-adim/left.png" alt=""></a> EDITAR MANGÁS</h1>
 
             <div class="caixas">
                 <div class="caixa">

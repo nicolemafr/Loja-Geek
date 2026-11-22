@@ -66,54 +66,57 @@
                 </div>
 
                 <div class="adicionar">
+
                     <div class="top">
                         <h2>+ ADICIONAR PRODUTO</h2>
                     </div>
 
-                    <div class="pt1">
-                        <div class="arrasta">
+                    <form class="form-produto" method="POST" enctype="multipart/form-data">
+                        <div class="pt1">
+                            <div class="arrasta">
+                                <label for="imagem">IMAGEM DO PRODUTO</label>
+                                <input type="file" name="imagem" id="imagem" accept="image/*">
+                            </div>
 
-                        </div>
+                            <div class="inputs">
+                                <label for="nome">NOME DO PRODUTO</label>
+                                <input type="text" name="nome" id="nome" required>
 
-                        <div class="inputs">
-                            <form method="">
-                                <label for="">NOME DO PRODUTO</label>
-                                <input type="text" name="" id="">
-
-                                <label for="">CATEGORIA</label>
-                                <select id="filtro" name="flitro">
-                                    <option value="none">Todos</option>
+                                <label for="categoria">CATEGORIA</label>
+                                <select id="categoria" name="categoria" required>
+                                    <option value="">Selecione</option>
                                     <option value="utensilios">Utensílios</option>
-                                    <option value="decoraçao">Decoração</option>
+                                    <option value="decoracao">Decoração</option>
                                     <option value="funko pop">Funko Pop</option>
                                     <option value="acessorios">Acessórios</option>
                                     <option value="vestuario">Vestuário</option>
                                     <option value="cartas">Cartas</option>
                                     <option value="comics">Comics</option>
-                                    <option value="comics">Mangás</option>
+                                    <option value="mangas">Mangás</option>
                                 </select>
 
-                                <label for="">PREÇO (R$)</label>
-                                <input type="text" name="" id="">
-                            </form>
+                                <label for="preco">PREÇO (R$)</label>
+                                <input type="number" name="preco" id="preco" min="0" step="0.01" required>
+
+                            </div>
+
                         </div>
-                    </div>
 
-                    <div class="pt2">
-                        <form method="">
-                            <label for="">DESCRIÇÃO</label>
-                            <input type="text" name="" id="">
-                            
-                            <label for="">ESTOQUE</label>
-                            <input type="text" name="" id="" required>
-                        </form>
-                    </div>
+                        <div class="pt2">
+                            <label for="descricao">DESCRIÇÃO</label>
+                            <textarea name="descricao" id="descricao" rows="4"></textarea>
 
-                    <div class="botao">
-                        <form action="">
-                            <button type="submit"></button>
-                        </form>
-                    </div>
+                            <label for="estoque">ESTOQUE</label>
+                            <input type="number" name="estoque" id="estoque" min="0" required>
+
+                        </div>
+
+                        <div class="botao">
+                            <button type="submit" class="cancela"> <img src="imagens-adim/Coval.png" alt=""> CANCELAR</button>
+                            <button type="submit">ADICIONAR PRODUTO</button>
+                        </div>
+                    </form>
+
                 </div>
             </section>
         </main>
