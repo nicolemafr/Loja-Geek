@@ -42,10 +42,6 @@
                     <span>R$ 500</span>
                 </div>
             </div>
-
-            <h2>Disponibilidade</h2>
-            <p> <span class="full"></span> Em estoque</p>
-            <p> <span></span> Esgotado</p>
         </div>
 
         <section>

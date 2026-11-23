@@ -1,4 +1,10 @@
 <?php
+include "./data/conexao.php";
+
+session_start();
+
+$nome = $_SESSION["usuario_nome"] ?? "Usuário";
+
 $paginaAtual = basename($_SERVER['PHP_SELF']);
 ?>
 
@@ -8,7 +14,7 @@ $paginaAtual = basename($_SERVER['PHP_SELF']);
 
     <nav>
 
-        <a class="Home-Header <?= $paginaAtual == 'index.php' ? 'ativo' : '' ?>" href="index.php">
+        <a class="Home-Header <?= $paginaAtual == 'home.php' ? 'ativo' : '' ?>" href="home.php">
             HOME
         </a>
 
@@ -52,7 +58,7 @@ $paginaAtual = basename($_SERVER['PHP_SELF']);
 
                     <h3>MINHA CONTA</h3>
 
-                    <p>João Vitor</p>
+                    <p><?= htmlspecialchars($nome) ?></p>
 
                 </div>
 

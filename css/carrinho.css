@@ -15,6 +15,7 @@ body {
         position: absolute;
         bottom: 500px;
         z-index: -1;
+        width: 100%;
     }
 }
 

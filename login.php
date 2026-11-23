@@ -1,3 +1,33 @@
+<?php
+session_start();    
+require "./data/conexao.php";
+$mensagem_erro = "";
+
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $email = trim($_POST["email"]);
+    $nome = trim($_POST["nome"]);
+    $senha = trim($_POST["senha"]);
+
+    $sql = "SELECT * FROM usuarios where email = ? and senha = ? and nome = ?";
+
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("sss", $email, $senha, $nome);
+    $stmt->execute();
+    $resultado = $stmt->get_result();
+    $usuario = $resultado->fetch_object();
+
+    if ($usuario) {
+        $_SESSION["usuario_id"] = $usuario->id;
+        $_SESSION["usuario_nome"] = $usuario->nome;
+        header("Location: /home.php");
+        exit;
+    } else {
+        $mensagem_erro = "Credenciais invalidas";
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -32,6 +62,10 @@
             <div class="BotaoF"></div>
         </form>
     </main>
+
+    <?php if ($mensagem_erro) : ?>
+        <p><?= $mensagem_erro ?></p>
+    <?php endif; ?>
 </body>
 
 </html>
