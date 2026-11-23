@@ -17,21 +17,85 @@
         <h1>MEU HISTORICO DE COMPRAS</h1>
         <p>Acompanhe todos os seus pedidos realizados na MIKROSKOSMOS.</p>
 
-        <div class="pedido">
-            <div class="info">
-                <h2>Pedido #017</h2>
-                <p>10/11/2026 - 14:22</p>
-                <p>Pagamento via Pix</p>
+        <div class="pedidos">
+            <div class="pedido">
+                <div class="info">
+                    <h2>Pedido #017</h2>
+                    <p> <img src="imagens/data.png" alt=""> 10/11/2026 - 14:22</p>
+                    <p> <img src="imagens/pixB.png" alt=""> Pagamento via Pix</p>
+                </div>
+                <div>
+                    <p class="preco">R$93,00</p>
+                    <p class="status">Entregue</p>
+                </div>
+
+                <p class="detalhes"> <img src="imagens/eye.png" alt=""> Ver detalhes</p>
             </div>
+            <div class="pedido">
+                <div class="info">
+                    <h2>Pedido #017</h2>
+                    <p> <img src="imagens/data.png" alt=""> 10/11/2026 - 14:22</p>
+                    <p> <img src="imagens/pixB.png" alt=""> Pagamento via Pix</p>
+                </div>
+                <div>
+                    <p class="preco">R$93,00</p>
+                    <p class="status">Entregue</p>
+                </div>
 
-            <div class="line"></div>
+                <p class="detalhes"> <img src="imagens/eye.png" alt=""> Ver detalhes</p>
+            </div>
+            <div class="pedido">
+                <div class="info">
+                    <h2>Pedido #017</h2>
+                    <p> <img src="imagens/data.png" alt=""> 10/11/2026 - 14:22</p>
+                    <p> <img src="imagens/pixB.png" alt=""> Pagamento via Pix</p>
+                </div>
+                <div>
+                    <p class="preco">R$93,00</p>
+                    <p class="status">Entregue</p>
+                </div>
 
-            <p class="preco">R$93,00</p>
+                <p class="detalhes"> <img src="imagens/eye.png" alt=""> Ver detalhes</p>
+            </div>
+            <div class="pedido">
+                <div class="info">
+                    <h2>Pedido #017</h2>
+                    <p> <img src="imagens/data.png" alt=""> 10/11/2026 - 14:22</p>
+                    <p> <img src="imagens/pixB.png" alt=""> Pagamento via Pix</p>
+                </div>
+                <div>
+                    <p class="preco">R$93,00</p>
+                    <p class="status">Entregue</p>
+                </div>
 
-            <p class="status">Entregue</p>
+                <p class="detalhes"> <img src="imagens/eye.png" alt=""> Ver detalhes</p>
+            </div>
+            <div class="pedido">
+                <div class="info">
+                    <h2>Pedido #017</h2>
+                    <p> <img src="imagens/data.png" alt=""> 10/11/2026 - 14:22</p>
+                    <p> <img src="imagens/pixB.png" alt=""> Pagamento via Pix</p>
+                </div>
+                <div>
+                    <p class="preco">R$93,00</p>
+                    <p class="status">Entregue</p>
+                </div>
 
-            <p class="detalhes">Ver detalhes</p>
+                <p class="detalhes"> <img src="imagens/eye.png" alt=""> Ver detalhes</p>
+            </div>
+            <div class="pedido">
+                <div class="info">
+                    <h2>Pedido #017</h2>
+                    <p> <img src="imagens/data.png" alt=""> 10/11/2026 - 14:22</p>
+                    <p> <img src="imagens/pixB.png" alt=""> Pagamento via Pix</p>
+                </div>
+                <div>
+                    <p class="preco">R$93,00</p>
+                    <p class="status">Entregue</p>
+                </div>
 
+                <p class="detalhes"> <img src="imagens/eye.png" alt=""> Ver detalhes</p>
+            </div>
         </div>
     </div>
 
