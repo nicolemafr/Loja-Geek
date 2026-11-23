@@ -1,17 +1,181 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap);
 
-body{
-    background-color: #181620;
+body {}
+
+.produtoContainer {
+
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    color: white;
+
+    h1 {
+        font-size: 35px;
+        font-family: "montserrat";
+    }
+
+    .categoriatext {
+        margin-top: -20px;
+        font-family: "Montserrat";
+        font-size: 20px;
+        color: #F3F39C;
+    }
+
+    h3 {
+        font-family: "Press start 2p";
+        text-decoration: line-through;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    h2 {
+        font-family: "press start 2p";
+        font-size: 40px;
+        color: #F3F39C;
+        margin-top: -20px;
+    }
+
+    .text-info {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+
+
+    .sub-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        gap: 20px;
+
+        img {
+
+            border: #AC91CD 3px solid;
+            border-radius: 12px;
+        }
+    }
+
+    .img-Produto-principal {
+
+        img {
+            border: #AC91CD 3px solid;
+            border-radius: 12px;
+        }
+    }
+
+
+    .infoProduto {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .promo-card {
+        font-family: "press start 2p";
+        font-weight: 400;
+        font-size: 12px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(/imagens/span-promo.png);
+        background-size: 100% 100%;
+        width: 180px;
+        height: 50px;
+    }
+
+
+    .qtd-produto {
+
+        p {
+            font-family: "Montserrat";
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        display: flex;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .divisor-produto {
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+
+        .tamanho {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(/imagens/fundo-borda.png);
+            background-size: 100% 100%;
+            width: 150px;
+            height: 50px;
+            font-family: "Press start 2p";
+            font-size: 10px;
+        }
+    }
+
+    .btns {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .btn1 {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            gap: 12px;
+            width: 550px;
+            background-image: url(/imagens/botao-editar.png);
+            height: 70px;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            font-family: "Montserrat";
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+
+            p {
+                margin-top: 12px;
+            }
+
+        }
+
+        .btn2 {
+            display: flex;
+            justify-content: center;
+
+            gap: 12px;
+            margin: 0;
+
+            width: 550px;
+            background-image: url(/imagens/botao-editar.png);
+            height: 70px;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            font-family: "Montserrat";
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+
+            p {
+                margin-top: 12px;
+            }
+        }
+    }
 }
 
-.produto-container{
-    height: 600px;
-    background-color: black;
-}
 
-
-.avaliacoes-container{
+.avaliacoes-container {
     display: flex;
     gap: 30px;
     padding: 0px 20px;
@@ -21,23 +185,24 @@ body{
 }
 
 
-.titulo-avaliacao{
+.titulo-avaliacao {
     margin-top: 30px;
     margin-left: 21px;
     display: flex;
     gap: 10px;
-    img{
+
+    img {
         width: 30px;
         height: 30px;
     }
 
-    h1{
+    h1 {
         color: white;
         font-family: "Montserrat";
     }
 }
 
-.avaliacao{
+.avaliacao {
     width: 530px;
     height: 200px;
     padding: 20px;
@@ -49,27 +214,28 @@ body{
     border-radius: 12px;
     color: white;
 
-    p{
+    p {
         font-family: "Montserrat";
         font-weight: 500;
     }
 
-    .avaliacao-cima{
+    .avaliacao-cima {
         display: flex;
         align-items: center;
         gap: 10px;
 
 
-        .nome-avaliacao{
+        .nome-avaliacao {
             display: flex;
             flex-direction: column;
             gap: 5px;
-            h4{
+
+            h4 {
                 font-family: "Press start 2p";
                 font-size: 12px;
             }
 
-            img{
+            img {
                 width: 20px;
             }
         }
@@ -77,11 +243,12 @@ body{
     }
 }
 
-.titulo-recomendacao{
+.titulo-recomendacao {
     margin-left: 30px;
     margin-top: 15px;
     margin-bottom: 15px;
-    h1{
+
+    h1 {
         font-weight: bold;
         color: #AC91CD;
         font-family: "Montserrat";
@@ -166,5 +333,50 @@ body{
             font-size: 18px;
             font-weight: bold;
         }
+    }
+}
+
+
+
+.quantidade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    img {
+        position: absolute;
+        width: 115px;
+        height: 60px;
+        left: 50%;
+        top: 65%;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+    }
+
+    button,
+    span {
+        position: relative;
+        z-index: 1;
+        background: transparent;
+        border: none;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 39px;
+        height: 44px;
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 23px;
+        font-weight: 600;
+    }
+
+    button {
+        cursor: pointer;
+    }
+
+    span {
+        font-size: 21px;
     }
 }

@@ -138,6 +138,10 @@ body {
             width: 500px;
         }
 
+        a{
+            text-decoration: none;
+        }
+
         button {
             display: flex;
             align-items: center;

@@ -20,7 +20,7 @@
             <p>Dos clássicos que marcaram gerações às novidades que despertam novas paixões. Aqui, cada detalhe tem uma história.</p>
 
             <div>
-                <button>EXPLORAR PRODUTOS <img src="imagens/setinha.png" alt=""></button>
+                <a href="/produtos.php"><button>EXPLORAR PRODUTOS <img src="imagens/setinha.png" alt=""></button></a>
                 <div class="BotaoF"></div>
             </div>
         </div>

@@ -42,7 +42,25 @@
 
         <div class="avatar-editar">
 
-            <div class="fotos-perfil">
+            <div id="avatar1" class="fotos-perfil">
+                <img class="avatar" src="./imagens/avatar1.png" alt="">
+                <img class="avatar" src="./imagens/avatar2.png" alt="">
+                <img class="avatar" src="./imagens/avatar3.png" alt="">
+                <img class="avatar" src="./imagens/avatar4.png" alt="">
+                <img class="avatar" src="./imagens/avatar5.png" alt="">
+                <img class="avatar" src="./imagens/avatar6.png" alt="">
+                <img class="avatar" src="./imagens/avatar7.png" alt="">
+                <img class="avatar" src="./imagens/avatar8.png" alt="">
+                <img class="avatar" src="./imagens/avatar9.png" alt="">
+                <img class="avatar" src="./imagens/avatar10.png" alt="">
+                <img class="avatar" src="./imagens/avatar11.png" alt="">
+                <img class="avatar" src="./imagens/avatar12.png" alt="">
+                <img class="avatar" src="./imagens/avatar13.png" alt="">
+                <img class="avatar" src="./imagens/avatar14.png" alt="">
+                <img class="avatar" src="./imagens/avatar15.png" alt="">
+                <img class="avatar" src="./imagens/avatar16.png" alt="">
+            </div>
+            <div id="avatar2" class="fotos-perfil">
                 <img class="avatar" src="./imagens/avatar1.png" alt="">
                 <img class="avatar" src="./imagens/avatar2.png" alt="">
                 <img class="avatar" src="./imagens/avatar3.png" alt="">
@@ -62,8 +80,8 @@
             </div>
 
             <div class="btn-session">
-                <button class="btn-alterar ativo" id="btn1">1</button>
-                <button class="btn-alterar" id="btn2">2</button>
+                <button type="button" class="btn-alterar ativo" id="btn1">1</button>
+                <button type="button" class="btn-alterar" id="btn2">2</button>
             </div>
 
             <div class="btn-editar"></div><a class="btn-alterar" href="">
@@ -81,6 +99,6 @@
 
 </body>
 
-<script src="./assets/botoesEditar-Perfil.js"></script>
+<script  src="./assets/avatar-page.js"></script>
 
 </html>

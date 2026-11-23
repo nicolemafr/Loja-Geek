@@ -78,7 +78,7 @@ $paginaAtual = basename($_SERVER['PHP_SELF']);
                 </div>
                 <div class="Sair">
 
-                    <a href="">
+                    <a href="../logout.php">
                         SAIR
                     </a>
 

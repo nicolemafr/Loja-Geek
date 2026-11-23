@@ -14,25 +14,55 @@
 <body>
     <?php include "./view/header.php" ?>
 
-    <div class="produto-container">
-
-        <div class="produtoContainer">
-            <div class="imgProduto"><img src="<?= $produtoSelecionado->imagem ?>" alt=""></div>
-
-
-            <div class="infoProduto">
-                <h1><?= $produtoSelecionado->nome ?></h1>
-                <h2>R$<?= $produtoSelecionado->preco ?>,00</h2>
-                <h3><span>Estoque:</span><?= $produtoSelecionado->estoque ?></h3>
-                <p><?= $produtoSelecionado->descricao ?></p>
-                <h4>Categoria: <span><?= $produtoSelecionado->categoria ?></span></h4>
-                <h5>Marca: <span><?= $produtoSelecionado->marca ?></span></h5>
-            </div>
-
+    <div class="produtoContainer">
+        <div class="sub-img">
+            <img src="https://placehold.co/150x180" alt="">
+            <img src="https://placehold.co/150x180" alt="">
+            <img src="https://placehold.co/150x180" alt="">
         </div>
 
+        <div class="img-Produto-principal"><img src="https://placehold.co/600x600" alt=""></div>
+
+
+        <div class="infoProduto">
+
+            <div class="text-info">
+                <h1>aaaaaaaaaaaaaaaaaaaaa</h1>
+                <p class="categoriatext">bbbbbbbbbbbbbbbbbbbb</p>
+                <div class="promo-card">
+                    <p>EM PROMOÇÃO</p>
+                </div>
+                <h3>R$149,90</h3>
+                <h2>R$93,90</h2>
+            </div>
+            <div class="qtd-produto">
+                <div class="divisor-produto">
+                    <p>TAMANHO</p>
+                    <span class="tamanho">TAMANHO ÚNICO</span>
+                </div>
+                <div class="divisor-produto">
+                    <p>QUANTIDADE</p>
+                    <div class="quantidade">
+                        <img src="imagens/Botao-carrinho.png" alt="">
+
+                        <button type="button">-</button>
+                        <span>1</span>
+                        <button type="button">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="btns">
+                <a class="btn1" href="">
+                    <p>COMPRAR AGORA</p>
+                </a>
+                <a class="btn2" href="">
+                    <p>ADICIONAR AO CARRINHO</p>
+                </a>
+            </div>
+        </div>
 
     </div>
+
 
 
     <div class="titulo-avaliacao">

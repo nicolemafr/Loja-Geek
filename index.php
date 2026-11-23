@@ -31,7 +31,7 @@
             <h1 class="h1-hero-1"><span class="span1">MUNDO PEQUENO </span>DEMAIS</h1>
             <h1 class="h1-hero-2">PARA <span class="span2">TANTOS UNIVERSOS</span></h1>
             <p>Dos mundos que você já conhece aos que ainda vai descobrir, seu próximo achado está aqui.</p>
-            <a class="btn-hero" href="">
+            <a class="btn-hero" href="/produtos.php">
                 <h4>EXPLORAR PRODUTOS</h4><img src="./imagens/setinha.png" alt="">
             </a>
         </div>
@@ -200,7 +200,7 @@
                 <img src="https://placehold.co/200x300" alt="">
             </div>
             <div class="caixa">
-                <video src="./videos/unboxing-naruto.mp4" controls loop></video>
+                <video src="./videos/unboxing-naruto.mp4" autoplay></video>
             </div>
             <div class="caixa">
                 <img src="https://placehold.co/200x300" alt="">
