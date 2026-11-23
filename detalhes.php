@@ -25,7 +25,7 @@
                     <h3>Pedido #017</h3>
                     <span>Entrega</span>
                 </div>
-                <p>Realizado em: 10/11/2026 - 14:22</p>
+                <p> <img src="imagens/data.png" alt=""> Realizado em: 10/11/2026 - 14:22</p>
             </div>
 
             <div class="pago">
@@ -57,7 +57,7 @@
         <div class="pagamento">
             <div>
                 <h3>Pagamento</h3>
-                <p>via PIX</p>
+                <p> <img src="imagens/pix.png" alt=""> via PIX</p>
             </div>
 
             <p>Pagamento Aprovado</p>

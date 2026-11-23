@@ -56,6 +56,12 @@ body {
                     color: #90CB77;
                 }
             }
+
+            p{
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
         }
 
         .pago {
@@ -146,6 +152,14 @@ body {
             p {
                 color: #AC91CD;
                 border: none;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                margin-left: -15px;
+
+                img{
+                    width: 35px;
+                }
             }
         }
 
