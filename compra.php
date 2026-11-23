@@ -13,6 +13,8 @@
 <body>
     <?php include "./view/header.php" ?>
 
+    <img src="imagens/Fcarrinhoecompra.png" alt="" class="fundo">
+
     <div class="body">
         <div class="identi">
             <h2>IDENTIFCAÇÃO</h2>

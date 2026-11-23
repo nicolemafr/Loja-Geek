@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/carrinho.css">
     <title>Carrinho</title>
 </head>
 
 <body>
     <?php include "./view/header.php" ?>
+
+    <img src="imagens/Fcarrinhoecompra.png" alt="" class="fundo">
 
     <div class="info">
         <h1>MEU CARRINHO</h1>
@@ -88,6 +91,8 @@
             </div>
         </div>
     </section>
+
+    <?php include "./view/footer.php" ?>
 </body>
 
 </html>

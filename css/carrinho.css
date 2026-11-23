@@ -9,6 +9,13 @@
 
 body {
     background-color: #181620;
+    position: relative;
+
+    .fundo{
+        position: absolute;
+        bottom: 500px;
+        z-index: -1;
+    }
 }
 
 .info {
@@ -39,7 +46,7 @@ section {
 
 
 .itens {
-    width: 700px;
+    width: 900px;
     max-width: 100%;
     background-color: #282632;
     border: 2px solid #AC91CD;
@@ -88,27 +95,27 @@ section {
     display: flex;
     align-items: center;
     gap: 10px;
-    width: 178px;
-    height: 73px;
+    width: 250px;
+    height: 100px;
     padding: 8px;
     border: 1px solid #AC91CD;
     border-radius: 12px;
     box-sizing: border-box;
 
     img {
-        width: 50px;
-        height: 50px;
+        width: 75px;
+        height: 75px;
         object-fit: contain;
     }
 
     h3 {
-        font-size: 11px;
+        font-size: 14px;
         font-weight: 600;
         margin: 0 0 3px;
     }
 
     h4 {
-        font-size: 10px;
+        font-size: 12px;
         font-weight: 400;
         color: #c5c2cc;
         margin: 0;
@@ -117,7 +124,7 @@ section {
 
 .preco,
 .total {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
