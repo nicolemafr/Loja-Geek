@@ -13,7 +13,7 @@ body {
 
     .nav {
         background-color: #15141B;
-        width: 300px;
+        width: 200px;
         height: 100vh;
         padding: 25px;
 
@@ -99,7 +99,7 @@ body {
         }
 
         .tabela {
-            width: 95%;
+            width: 100%;
             background-color: #282632;
             border: 1px solid #AC91CD;
             border-radius: 15px;
@@ -114,7 +114,7 @@ body {
         .info,
         .itens {
             display: grid;
-            grid-template-columns: 130px repeat(4, 1fr) 100px;
+            grid-template-columns: 50px repeat(4, 1fr) 50px;
             gap: 15px;
             align-items: center;
             padding: 15px 20px;
@@ -129,8 +129,13 @@ body {
 
             p {
                 margin: 0px 10px;
-                font-size: 18px;
+                font-size: 16px;
                 text-align: center;
+            }
+
+            .NP{
+                width: 100px;
+                text-align: left;
             }
         }
 
@@ -146,7 +151,7 @@ body {
                 text-align: center;
                 font-size: 16px;
                 margin: 0;
-                margin-left: -5px;
+                margin-left: -25px;
             }
 
             .nome {

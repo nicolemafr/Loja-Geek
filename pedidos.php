@@ -30,7 +30,7 @@
 
             <div class="filtro">
                 <form action="">
-                    <input type="text" name="" id="">
+                    <input type="text" name="" id="" placeholder="Buscar pedido, usuário ou produto...">
                 </form>
 
                 <select id="filtro" name="flitro">
@@ -44,7 +44,7 @@
 
             <div class="tabela">
                 <div class="info">
-                    <p>ID DO PEDIDO</p>
+                    <p class="NP">N° DO PEDIDO</p>
                     <p>USUÁRIO</p>
                     <p>DATA E HORA</p>
                     <p>TOTAL</p>

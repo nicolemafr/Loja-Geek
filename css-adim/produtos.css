@@ -74,7 +74,7 @@ body {
             gap: 15px;
 
             .itens {
-                width: 50%;
+                width: 600px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -164,7 +164,7 @@ body {
             }
 
             .adicionar {
-                width: 50%;
+                width: 500px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -199,13 +199,14 @@ body {
                 align-items: center;
                 justify-content: center;
                 gap: 25px;
+                padding: 25px;
                 padding-top: 25px;
                 width: 100%;
             }
 
             .arrasta {
-                width: 275px;
-                height: 275px;
+                width: 400px;
+                height: 200px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -240,7 +241,7 @@ body {
                 color: white;
                 padding: 20px;
                 font-size: 16px;
-                width: 400px;
+                width: 250px;
                 background: transparent;
                 border: 2px solid rgba(172, 145, 205, 0.5);
                 border-radius: 15px;
@@ -279,6 +280,8 @@ body {
             .pt2 textarea {
                 resize: vertical;
                 font-family: 'Montserrat', sans-serif;
+                width: 100%;
+                max-height: 75px;
             }
 
             .botao {

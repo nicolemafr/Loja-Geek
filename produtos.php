@@ -31,7 +31,7 @@
             <section>
                 <div class="itens">
                     <div class="filtro">
-                        <input type="text" name="" id="">
+                        <input type="text" name="" id="" placeholder="">
 
                         <select id="filtro" name="flitro">
                             <option value="none">Todos</option>

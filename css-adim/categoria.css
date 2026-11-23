@@ -77,9 +77,9 @@ body {
             gap: 25px;
 
             .caixa {
-                width: 350px;
+                width: 250px;
                 text-decoration: none;
-                height: 350px;
+                height: 250px;
                 border: 2px solid #AC91CD;
                 border-radius: 25px;
                 display: flex;
@@ -95,7 +95,7 @@ body {
                     .F1,
                     .F2 {
                         position: absolute;
-                        width: 200px;
+                        width: 150px;
                         left: 50%;
                         right: 50%;
                         transform: translate(-50%, -50%);
