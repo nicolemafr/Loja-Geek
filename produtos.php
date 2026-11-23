@@ -1,4 +1,7 @@
-<?php include "./data/conexao.php" ?>
+<?php include "./data/conexao.php";
+$sql = "Select * from produtos";
+$resultado = $conn->query($sql);
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -51,93 +54,28 @@
     </div>
 
     <div class="produtos">
-        <div class="produto">
-            <img src="imagens/produto1.png" alt="">
-            <h3>Funko Pop Sakura</h3>
-            <p>Naruto</p>
-            <h2>R$ 149,90</h2>
-            <div class="info">
-                <p> <span></span> Em estoque</p>
-                <img src="imagens/Carrinho 2.png" alt="">
-            </div>
-        </div>
+        <?php for ($i = 0; $i < $resultado->num_rows; $i++) {
+            $produto = $resultado->fetch_assoc(); ?>
+            <div class="produto">
+                <img src="imagens/produto1.png" alt="">
+                <h3><?= htmlspecialchars($produto['nome']) ?></h3>
+                <p><?= htmlspecialchars($produto['id_subcategoria']) ?></p>
 
-        <div class="produto">
-            <img src="imagens/produto1.png" alt="">
-            <h3>Funko Pop Sakura</h3>
-            <p>Naruto</p>
-            <h2>R$ 149,90</h2>
-            <div class="info">
-                <p> <span></span> Em estoque</p>
-                <img src="imagens/Carrinho 2.png" alt="">
-            </div>
-        </div>
+                <h2>R$ <?= number_format($produto['preco'], 2, ',', '.') ?></h2>
 
-        <div class="produto">
-            <img src="imagens/produto1.png" alt="">
-            <h3>Funko Pop Sakura</h3>
-            <p>Naruto</p>
-            <h2>R$ 149,90</h2>
-            <div class="info">
-                <p> <span></span> Em estoque</p>
-                <img src="imagens/Carrinho 2.png" alt="">
-            </div>
-        </div>
+                <div class="info">
 
-        <div class="produto">
-            <img src="imagens/produto1.png" alt="">
-            <h3>Funko Pop Sakura</h3>
-            <p>Naruto</p>
-            <h2>R$ 149,90</h2>
-            <div class="info">
-                <p> <span></span> Em estoque</p>
-                <img src="imagens/Carrinho 2.png" alt="">
-            </div>
-        </div>
+                    <?php if ($produto['quantidade_estoque'] > 0) { ?>
+                        <p><span></span> Em estoque</p>
+                    <?php } else { ?>
+                        <p>Sem estoque</p>
+                    <?php } ?>
 
-        <div class="produto">
-            <img src="imagens/produto1.png" alt="">
-            <h3>Funko Pop Sakura</h3>
-            <p>Naruto</p>
-            <h2>R$ 149,90</h2>
-            <div class="info">
-                <p> <span></span> Em estoque</p>
-                <img src="imagens/Carrinho 2.png" alt="">
-            </div>
-        </div>
+                    <img src="imagens/Carrinho 2.png" alt="Carrinho">
 
-        <div class="produto">
-            <img src="imagens/produto1.png" alt="">
-            <h3>Funko Pop Sakura</h3>
-            <p>Naruto</p>
-            <h2>R$ 149,90</h2>
-            <div class="info">
-                <p> <span></span> Em estoque</p>
-                <img src="imagens/Carrinho 2.png" alt="">
+                </div>
             </div>
-        </div>
-
-        <div class="produto">
-            <img src="imagens/produto1.png" alt="">
-            <h3>Funko Pop Sakura</h3>
-            <p>Naruto</p>
-            <h2>R$ 149,90</h2>
-            <div class="info">
-                <p> <span></span> Em estoque</p>
-                <img src="imagens/Carrinho 2.png" alt="">
-            </div>
-        </div>
-
-        <div class="produto">
-            <img src="imagens/produto1.png" alt="">
-            <h3>Funko Pop Sakura</h3>
-            <p>Naruto</p>
-            <h2>R$ 149,90</h2>
-            <div class="info">
-                <p> <span></span> Em estoque</p>
-                <img src="imagens/Carrinho 2.png" alt="">
-            </div>
-        </div>
+        <?php } ?>
 
     </div>
 
