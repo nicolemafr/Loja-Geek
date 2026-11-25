@@ -86,14 +86,14 @@ body {
 
     p {
         margin-top: 25px;
-        color: rgb(255, 0, 0);
+        color: #F3F39C;
         font-weight: 600;
         font-family: 'Montserrat', sans-serif;
         font-size: 22px;
     }
 
     .erro{
-        border: 2px solid red;
+        border: 2px solid #F3F39C;
         transition: 1s;
     }
 }
