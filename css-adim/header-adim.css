@@ -42,7 +42,7 @@ header {
     }
 }
 
-/* @view-transition {
+@view-transition {
     navigation: auto;
 }
 
@@ -83,4 +83,4 @@ header {
 
 ::view-transition-new(root) {
     animation: entra 0.35s cubic-bezier(0.22, 1, 0.36, 1) both;
-} */
+}

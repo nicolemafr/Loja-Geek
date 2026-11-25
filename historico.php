@@ -1,5 +1,10 @@
 <?php include "./data/conexao.php";
 $id = $_GET['id'];
+$sql = "SELECT itens_pedido.*, produtos.nome AS produto, categorias.nome AS categoria, pedidos.data_pedido as data FROM itens_pedido INNER JOIN produtos ON itens_pedido.id_produto = produtos.id_produto INNER JOIN categorias ON produtos.id_categoria = categorias.id_categoria INNER JOIN pedidos ON itens_pedido.id_pedido = pedidos.id_pedido WHERE itens_pedido.id_pedido =$id";
+$sql2 = "select nome, email from usuarios where id_usuario = $id";
+$resultado = $conn->query($sql);
+$resultado2 = $conn->query($sql2);
+$dados = $resultado2->fetch_assoc();
 ?>
 
 <!DOCTYPE html>
@@ -33,8 +38,8 @@ $id = $_GET['id'];
             <h1> <a href="usuários.php"><img src="imagens-adim/left.png" alt=""></a> HISTORICO DO USUARIO</h1>
 
             <div class="nome">
-                <h2>Sofia Rodrigues</h2>
-                <p>sofia.rodrigues@gmail.com</p>
+                <h2><?= $dados['nome'] ?></h2>
+                <p><?= $dados['email'] ?></p>
             </div>
 
             <div class="tabela">
@@ -47,28 +52,20 @@ $id = $_GET['id'];
                 </div>
 
                 <div class="itens">
-                    <p>001</p>
+                    <?php for ($i = 0; $i < $resultado->num_rows; $i++) {
+                    $pedido = $resultado->fetch_assoc(); ?>
+                    <p><?= htmlspecialchars($pedido['id_pedido']) ?></p>
 
-                    <p class="prodN">FUNKO POP MULHER ARANHA</p>
+                    <p class="prodN"><?= htmlspecialchars($pedido['produto']) ?></p>
 
-                    <p>MARVEL</p>
+                    <p><?= htmlspecialchars($pedido['categoria']) ?></p>
 
-                    <p>28/04/2018</p>
+                    <p><?= htmlspecialchars($pedido['data']) ?></p>
 
-                    <p>R$93,50</p>
+                    <p>R$<?= htmlspecialchars($pedido['subtotal']) ?></p>
+                    <?php } ?>
                 </div>
 
-                <div class="itens">
-                    <p>001</p>
-
-                    <p class="prodN">FUNKO POP MULHER ARANHA</p>
-
-                    <p>MARVEL</p>
-
-                    <p>28/04/2018</p>
-
-                    <p>R$93,50</p>
-                </div>
             </div>
 
             <div class="compra">

@@ -1,5 +1,9 @@
 <?php include "./data/conexao.php";
 $id = $_GET['id'];
+$sql = "SELECT categorias.*, produtos.quantidade_estoque FROM categorias INNER JOIN produtos 
+ON categorias.id_categoria = produtos.id_categoria WHERE categorias.id_categoria = $id";
+$resultado = $conn->query($sql);
+$dados = $resultado->fetch_assoc();
 ?>
 
 <!DOCTYPE html>
@@ -36,7 +40,7 @@ $id = $_GET['id'];
                 <div class="caixa">
                     <p>Total de produtos</p>
 
-                    <span>15</span>
+                    <span><?= $dados['quantidade_estoque'] ?></span>
                 </div>
                 <div class="caixa estoque">
                     <p>Em estoque</p>
