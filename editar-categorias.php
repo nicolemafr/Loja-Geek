@@ -1,6 +1,6 @@
 <?php include "./data/conexao.php";
 $id = $_GET['id'];
-$sql = "SELECT categorias.*, produtos.quantidade_estoque FROM categorias INNER JOIN produtos 
+$sql = "SELECT categorias.*, produtos.quantidade_estoque, produtos.imagem, produtos.nome as produto_nome FROM categorias INNER JOIN produtos 
 ON categorias.id_categoria = produtos.id_categoria WHERE categorias.id_categoria = $id";
 $resultado = $conn->query($sql);
 $dados = $resultado->fetch_assoc();
@@ -34,7 +34,7 @@ $dados = $resultado->fetch_assoc();
         </div>
 
         <main>
-            <h1> <a href="categorias.php"><img src="imagens-adim/left.png" alt=""></a> EDITAR MANGÁS</h1>
+            <h1> <a href="categorias.php"><img src="imagens-adim/left.png" alt=""></a> EDITAR <?= $dados['nome'] ?></h1>
 
             <div class="caixas">
                 <div class="caixa">
@@ -67,14 +67,14 @@ $dados = $resultado->fetch_assoc();
                     <p>STATUS</p>
                     <p>AÇÕES</p>
                 </div>
-
+                <?php for ($i = 0; $i < $resultado->num_rows; $i++) {?>
                 <div class="itens">
                     <div class="produto">
-                        <img src="imagens-adim/Manga9-2.png" alt="">
-                        <p>Mangá de Naruto</p>
+                        <img src="<?= $dados['imagem'] ?>" alt="">
+                        <p><?= $dados['produto_nome'] ?></p>
                     </div>
 
-                    <p class="quantidade">120</p>
+                    <p class="quantidade"><?= $dados['quantidade_estoque'] ?></p>
 
                     <p class="em-estoque">Em estoque</p>
 
@@ -83,23 +83,7 @@ $dados = $resultado->fetch_assoc();
                         <img src="imagens-adim/Lixeira-perfil.png" alt="Excluir">
                     </div>
                 </div>
-
-                <div class="itens">
-                    <div class="produto">
-                        <img src="imagens-adim/Manga9-2.png" alt="">
-                        <p>Mangá de Naruto</p>
-                    </div>
-
-                    <p class="quantidade">120</p>
-
-                    <p class="em-estoque">Em estoque</p>
-
-                    <div class="acoes">
-                        <img src="imagens-adim/Caneta-Editar.png" alt="Editar">
-                        <img src="imagens-adim/Lixeira-perfil.png" alt="Excluir">
-                    </div>
-                </div>
-
+                <?php } ?>
             </div>
         </main>
     </div>
