@@ -2,6 +2,7 @@
 session_start();    
 require "./data/conexao.php";
 $mensagem_erro = "";
+$classe_erro = "";
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $email = trim($_POST["email"]);
@@ -23,6 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         exit;
     } else {
         $mensagem_erro = "Credenciais invalidas";
+        $classe_erro = "erro";
     }
 }
 
@@ -45,21 +47,20 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <form method="POST">
             <div>
                 <label for="nome">NOME</label>
-                <input type="text" name="nome" id="nome" autocomplete="off" placeholder="Ex.: Maria Silva">
+                <input type="text" class="<?php echo $classe_erro; ?>" name="nome" id="nome" autocomplete="off" placeholder="Ex.: Maria Silva">
             </div>
 
             <div>
                 <label for="email">EMAIL</label>
-                <input type="email" name="email" id="email" autocomplete="off" required placeholder="Ex.: mariasilva@gmail.com">
+                <input type="email" class="<?php echo $classe_erro; ?>" name="email" id="email" autocomplete="off" required placeholder="Ex.: mariasilva@gmail.com">
             </div>
 
             <div>
                 <label for="senha">SENHA</label>
-                <input type="password" name="senha" id="senha" autocomplete="off" required placeholder="Ex.: 123456">
+                <input type="password" class="<?php echo $classe_erro; ?>" name="senha" id="senha" autocomplete="off" required placeholder="Ex.: 123456">
             </div>
 
-            <button type="submit">LOGIN</button>
-            <div class="BotaoF"></div>
+            <button type="submit"> <img src="imagens/botao-editar.png" alt=""> LOGIN</button>
         </form>
     </main>
 
