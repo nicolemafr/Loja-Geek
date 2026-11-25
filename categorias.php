@@ -1,14 +1,7 @@
 <?php
 require "./data/conexao.php";
-$sql = "SELECT * FROM categorias";
+$sql = "SELECT categorias.*, COUNT(produtos.id_produto) AS quantidade FROM categorias LEFT JOIN produtos ON categorias.id_categoria = produtos.id_categoria GROUP BY categorias.id_categoria";
 $resultado = $conn->query($sql);
-$id_categoria = 1;
-$sql2 = "SELECT COUNT(*) AS quantidade FROM produtos WHERE id_categoria = ?";
-$stmt = $conn->prepare($sql2);
-$stmt->bind_param("i", $id_categoria);
-$stmt->execute();
-$resultado2 = $stmt->get_result();
-$dados = $resultado2->fetch_assoc();
 ?>
 
 <!DOCTYPE html>
@@ -43,9 +36,7 @@ $dados = $resultado2->fetch_assoc();
 
             <div class="caixas">
                 <?php for ($i = 0; $i < $resultado->num_rows; $i++) {
-                    $categoria = $resultado->fetch_assoc();
-                    $quantidade = $resultado2->fetch_assoc();
-                    ?>
+                    $categoria = $resultado->fetch_assoc(); ?>
                     <a href="editar-categorias.php?id=<?= ($categoria['id_categoria']) ?>" class="caixa">
                         <div class="Fundo">
                             <img src="<?= htmlspecialchars($categoria['imagem']) ?>" alt="">
@@ -53,7 +44,7 @@ $dados = $resultado2->fetch_assoc();
 
                         <div class="info">
                             <div>
-                                <span> <?= $dados['quantidade'] ?> PRODUTOS</span>
+                                <span> <?= $categoria['quantidade'] ?> PRODUTOS</span>
                                 <p><?= htmlspecialchars($categoria['nome']) ?></p>
                             </div>
 

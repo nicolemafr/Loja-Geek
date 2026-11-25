@@ -1,7 +1,6 @@
 <?php include "./data/conexao.php";
 $id = $_GET['id'];
-$sql = "SELECT categorias.*, produtos.quantidade_estoque, produtos.imagem, produtos.nome as produto_nome FROM categorias INNER JOIN produtos 
-ON categorias.id_categoria = produtos.id_categoria WHERE categorias.id_categoria = $id";
+$sql = "SELECT categorias.*, produtos.quantidade_estoque, produtos.imagem, produtos.nome as produto_nome FROM categorias left JOIN produtos  ON categorias.id_categoria = produtos.id_categoria WHERE categorias.id_categoria = $id";
 $resultado = $conn->query($sql);
 $dados = $resultado->fetch_assoc();
 ?>

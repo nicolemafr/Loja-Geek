@@ -1,3 +1,9 @@
+<?php
+require "./data/conexao.php";
+$sql = "SELECT produtos.*, categorias.nome AS categoria FROM produtos INNER JOIN categorias ON produtos.id_categoria = categorias.id_categoria";
+$resultado = $conn->query($sql);
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -46,23 +52,26 @@
                         </select>
                     </div>
 
-                    <div class="item">
-                        <img src="imagens-adim/Manga15-2.png" alt="">
+                    <?php for ($i = 0; $i < $resultado->num_rows; $i++) {
+                        $produto = $resultado->fetch_assoc(); ?>
+                        <div class="item">
+                            <img src="<?= htmlspecialchars($produto['imagem']) ?>" alt="">
 
-                        <div class="desc">
-                            <span>Mangá de Demon Slayer</span>
-                            <p>Mangás</p>
-                        </div>
+                            <div class="desc">
+                                <span><?= htmlspecialchars($produto['nome']) ?></span>
+                                <p><?= htmlspecialchars($produto['categoria']) ?></p>
+                            </div>
 
-                        <p class="valor">R$62,99</p>
+                            <p class="valor">R$<?= htmlspecialchars($produto['preco']) ?></p>
 
-                        <div class="acoes">
                             <div class="acoes">
-                                <img src="imagens-adim/Caneta-Editar.png" alt="Editar">
-                                <img src="imagens-adim/Lixeira-perfil.png" alt="Excluir">
+                                <div class="acoes">
+                                    <img src="imagens-adim/Caneta-Editar.png" alt="Editar">
+                                    <img src="imagens-adim/Lixeira-perfil.png" alt="Excluir">
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    <?php } ?>
                 </div>
 
                 <div class="adicionar">

@@ -67,7 +67,7 @@ $resultado = $conn->query($sql);
 
                         <p class="data"><?= htmlspecialchars($pedido['data_pedido']) ?></p>
 
-                        <p class="total"><?= htmlspecialchars($pedido['preco_total']) ?></p>
+                        <p class="total">R$<?= htmlspecialchars($pedido['preco_total']) ?></p>
 
                         <p class="status"><?= htmlspecialchars($pedido['status']) ?></p>
 
