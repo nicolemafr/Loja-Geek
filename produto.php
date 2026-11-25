@@ -1,3 +1,8 @@
+
+<?php
+    require"./data/conexao.php"
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -27,7 +32,7 @@
         <div class="infoProduto">
 
             <div class="text-info">
-                <h1>aaaaaaaaaaaaaaaaaaaaa</h1>
+                <h1><?php 2 ?></h1>
                 <p class="categoriatext">bbbbbbbbbbbbbbbbbbbb</p>
                 <div class="promo-card">
                     <p>EM PROMOÇÃO</p>
