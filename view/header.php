@@ -38,7 +38,7 @@ $paginaAtual = basename($_SERVER['PHP_SELF']);
 
     <div class="direita-header">
 
-        <a href="">
+        <a href="/carrinho.php">
             <img class="carrinho" src="./imagens/carrinho.png" alt="">
         </a>
 

@@ -1,5 +1,12 @@
 <?php include "./data/conexao.php";
 $sql = "Select * from produtos";
+
+$sql2 = "select subcategorias.nome
+from produtos
+inner join subcategorias
+on subcategorias.id_subcategoria = produtos.id_subcategoria";
+$resultado2 = $conn->query($sql2);
+
 $resultado = $conn->query($sql);
 ?>
 
@@ -55,27 +62,33 @@ $resultado = $conn->query($sql);
 
     <div class="produtos">
         <?php for ($i = 0; $i < $resultado->num_rows; $i++) {
-            $produto = $resultado->fetch_assoc(); ?>
+            $produto = $resultado->fetch_assoc();
+            $subcategoria = $resultado2->fetch_assoc();
+            ?>
+
             <div class="produto">
-                <img src="imagens/produto1.png" alt="">
-                <h3><?= htmlspecialchars($produto['nome']) ?></h3>
-                <p><?= htmlspecialchars($produto['id_subcategoria']) ?></p>
 
-                <h2>R$ <?= number_format($produto['preco'], 2, ',', '.') ?></h2>
+                <a href="produto.php?id=<?= $produto['id_produto'] ?>"><img src="imagens/produto1.png" alt="">
+                    <h3><?= htmlspecialchars($produto['nome']) ?></h3>
+                    <p><?= htmlspecialchars($subcategoria['nome']) ?></p>
 
-                <div class="info">
+                    <h2>R$ <?= number_format($produto['preco'], 2, ',', '.') ?></h2>
 
-                    <?php if ($produto['quantidade_estoque'] > 0) { ?>
-                        <p><span></span> Em estoque</p>
-                    <?php } else { ?>
-                        <p>Sem estoque</p>
-                    <?php } ?>
+                    <div class="info">
 
+                        <?php if ($produto['quantidade_estoque'] > 0) { ?>
+                            <p><span></span> Em estoque</p>
+                        <?php } else { ?>
+                            <p>Sem estoque</p>
+                        <?php } ?>
+                </a>
+                <button class="BtnCarrinho" data-id="<?= $produto['id_produto'] ?>">
                     <img src="imagens/Carrinho 2.png" alt="Carrinho">
+                </button>
 
-                </div>
             </div>
-        <?php } ?>
+        </div>
+    <?php } ?>
 
     </div>
 
@@ -89,6 +102,7 @@ $resultado = $conn->query($sql);
     </div>
 
     <?php include "./view/footer.php" ?>
+    <script src="./assets/carrinho.js"></script>
 </body>
 
 </html>

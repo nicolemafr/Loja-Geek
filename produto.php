@@ -1,6 +1,34 @@
-
 <?php
-    require"./data/conexao.php"
+require "./data/conexao.php";
+
+// Captura o ID e força a conversão para número inteiro (proteção mínima)
+$id = (int) $_GET['id'];
+
+// O ID é inserido direto na string SQL
+$sql = "SELECT 
+    produtos.id_produto,
+    produtos.nome, -- Troque pelo nome real da coluna do produto
+    categorias.nome as categoria, -- Troque pelo nome real da coluna da categoria
+    subcategorias.nome as subcategoria,
+    produtos.descricao as descricao,
+    produtos.imagem as imagem,
+    produtos.imagem2 as imagem2,
+    produtos.imagem3 as imagem3,
+    produtos.preco,
+    produtos.quantidade_estoque as quantidadeEstoque
+FROM produtos   
+INNER JOIN categorias 
+    ON categorias.id_categoria = produtos.id_categoria
+INNER JOIN subcategorias 
+    ON subcategorias.id_subcategoria = produtos.id_subcategoria -- Amarrado ao ID do produto ou da subcategoria selecionada
+WHERE produtos.id_produto = $id";
+
+// Executa a query diretamente
+$resultado = $conn->query($sql);
+
+
+$produtoSelecionado = $resultado->fetch_object();
+
 ?>
 
 <!DOCTYPE html>
@@ -13,32 +41,42 @@
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/produto.css">
     <link rel="stylesheet" href="./css/footer.css">
-    <title>Document</title>
+    <title>
+        Loja Geek | <?= $produtoSelecionado ? $produtoSelecionado->nome : "Produto não encotrado" ?>
+    </title>
 </head>
 
 <body>
     <?php include "./view/header.php" ?>
 
     <div class="produtoContainer">
-        <div class="sub-img">
-            <img src="https://placehold.co/150x180" alt="">
-            <img src="https://placehold.co/150x180" alt="">
-            <img src="https://placehold.co/150x180" alt="">
+        <div class="imagens">
+            <div class="sub-imgs">
+                <img src="<?= $produtoSelecionado->imagem ?>" alt="">
+                <img src="<?= $produtoSelecionado->imagem2 ?>" alt="">
+                <img src="<?= $produtoSelecionado->imagem3 ?>" alt="">
+            </div>
+            <div class="imgprincipal"><img src="<?= $produtoSelecionado->imagem ?>" alt=""></div>
         </div>
 
-        <div class="img-Produto-principal"><img src="https://placehold.co/600x600" alt=""></div>
 
 
         <div class="infoProduto">
 
             <div class="text-info">
-                <h1><?php 2 ?></h1>
-                <p class="categoriatext">bbbbbbbbbbbbbbbbbbbb</p>
+                <h1><?= $produtoSelecionado->nome ?></h1>
+                <p class="categoriatext"><?= $produtoSelecionado->subcategoria ?></p>
+                <h2 class="h2"><?= $produtoSelecionado->descricao ?></h2>
                 <div class="promo-card">
                     <p>EM PROMOÇÃO</p>
                 </div>
-                <h3>R$149,90</h3>
-                <h2>R$93,90</h2>
+                <h3><?= $produtoSelecionado->preco * 1.20 ?></h3>
+                <h2><?= $produtoSelecionado->preco ?></h2>
+
+                <div class="estoque">
+                    <h4>EM ESTOQUE: <span><?= $produtoSelecionado->quantidadeEstoque ?></span></h4>
+
+                </div>
             </div>
             <div class="qtd-produto">
                 <div class="divisor-produto">
@@ -50,9 +88,11 @@
                     <div class="quantidade">
                         <img src="imagens/Botao-carrinho.png" alt="">
 
-                        <button type="button">-</button>
-                        <span>1</span>
-                        <button type="button">+</button>
+                        <button id="btnDiminuir" type="button">-</button>
+                        <span id="quantidade" data-estoque="<?= $produtoSelecionado->quantidadeEstoque ?>">
+                            <?= $produtoSelecionado->quantidadeEstoque > 0 ? 1 : 0 ?>
+                        </span>
+                        <button id="btnAumentar" type="button">+</button>
                     </div>
                 </div>
             </div>
@@ -277,6 +317,8 @@
 
 
     <?php include "./view/footer.php" ?>
+
 </body>
+<script src="./assets/btn-quantidade.js"></script>
 
 </html>
