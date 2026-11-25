@@ -168,6 +168,8 @@ body {
 
             .status {
                 margin-left: 40px;
+                text-transform: uppercase;
+                font-weight: 600;
             }
 
             img {

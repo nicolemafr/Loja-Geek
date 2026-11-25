@@ -1,3 +1,7 @@
+<?php include "./data/conexao.php";
+$id = $_GET['id'];
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 

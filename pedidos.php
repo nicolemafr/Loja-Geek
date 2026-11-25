@@ -1,3 +1,9 @@
+<?php
+require "./data/conexao.php";
+$sql = "select pedidos.*, usuarios.nome from pedidos inner join usuarios on pedidos.id_usuario = usuarios.id_usuario";
+$resultado = $conn->query($sql);
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -52,19 +58,22 @@
                     <p>AÇÕES</p>
                 </div>
 
-                <div class="itens">
-                    <p>001</p>
+                <?php for ($i = 0; $i < $resultado->num_rows; $i++) {
+                    $pedido = $resultado->fetch_assoc(); ?>
+                    <div class="itens">
+                        <p><?= htmlspecialchars($pedido['id_pedido']) ?></p>
 
-                    <p class="nome">Sofia Rodrigues</p>
+                        <p class="nome"><?= htmlspecialchars($pedido['nome']) ?></p>
 
-                    <p class="data">10/11/2026 - 14:22</p>
+                        <p class="data"><?= htmlspecialchars($pedido['data_pedido']) ?></p>
 
-                    <p class="total">R$93,50</p>
+                        <p class="total"><?= htmlspecialchars($pedido['preco_total']) ?></p>
 
-                    <p class="status">Entregue</p>
+                        <p class="status"><?= htmlspecialchars($pedido['status']) ?></p>
 
-                    <img src="imagens-adim/Lixeira-perfil.png" alt="Excluir">
-                </div>
+                        <img src="imagens-adim/Lixeira-perfil.png" alt="Excluir">
+                    </div>
+                <?php } ?>
 
             </div>
         </main>

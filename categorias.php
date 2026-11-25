@@ -1,7 +1,14 @@
 <?php
 require "./data/conexao.php";
-$sql = "Select * from categorias";
+$sql = "SELECT * FROM categorias";
 $resultado = $conn->query($sql);
+$id_categoria = 1;
+$sql2 = "SELECT COUNT(*) AS quantidade FROM produtos WHERE id_categoria = ?";
+$stmt = $conn->prepare($sql2);
+$stmt->bind_param("i", $id_categoria);
+$stmt->execute();
+$resultado2 = $stmt->get_result();
+$dados = $resultado2->fetch_assoc();
 ?>
 
 <!DOCTYPE html>
@@ -36,15 +43,17 @@ $resultado = $conn->query($sql);
 
             <div class="caixas">
                 <?php for ($i = 0; $i < $resultado->num_rows; $i++) {
-                    $categoria = $resultado->fetch_assoc(); ?>
-                    <a href="editar-categorias.php" class="caixa">
+                    $categoria = $resultado->fetch_assoc();
+                    $quantidade = $resultado2->fetch_assoc();
+                    ?>
+                    <a href="editar-categorias.php?id=<?= ($categoria['id_categoria']) ?>" class="caixa">
                         <div class="Fundo">
                             <img src="<?= htmlspecialchars($categoria['imagem']) ?>" alt="">
                         </div>
 
                         <div class="info">
                             <div>
-                                <span>15 PRODUTOS</span>
+                                <span> <?= $dados['quantidade'] ?> PRODUTOS</span>
                                 <p><?= htmlspecialchars($categoria['nome']) ?></p>
                             </div>
 

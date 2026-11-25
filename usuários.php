@@ -45,7 +45,7 @@ $resultado = $conn->query($sql);
                 <?php for ($i = 0; $i < $resultado->num_rows; $i++) {
                     $usuario = $resultado->fetch_assoc();
                 ?>
-                    <a href="historico.php" class="itens">
+                    <a href="historico.php?id=<?= ($usuario['id_usuario']) ?>" class="itens">
                         <p><?= htmlspecialchars($usuario['id_usuario']) ?></p>
 
                         <p><?= htmlspecialchars($usuario['nome']) ?></p>
