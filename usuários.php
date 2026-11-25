@@ -1,3 +1,9 @@
+<?php
+require "./data/conexao.php";
+$sql = "Select * from usuarios";
+$resultado = $conn->query($sql);
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -36,30 +42,25 @@
                     <p>TIPO</p>
                     <p class="del">DELETAR</p>
                 </div>
+                <?php for ($i = 0; $i < $resultado->num_rows; $i++) {
+                    $usuario = $resultado->fetch_assoc();
+                ?>
+                    <a href="historico.php" class="itens">
+                        <p><?= htmlspecialchars($usuario['id_usuario']) ?></p>
 
-                <a href="historico.php" class="itens">
-                    <p>001</p>
+                        <p><?= htmlspecialchars($usuario['nome']) ?></p>
 
-                    <p>Sofia Rodrigues</p>
+                        <p><?= htmlspecialchars($usuario['email']) ?></p>
 
-                    <p>sofia.rodrigues@gmail.com</p>
+                        <?php if ($usuario['adm'] == 1) { ?>
+                            <p class="tipo"> <span></span> Administrador</p>
+                        <?php } else { ?>
+                            <p>Usuário</p>
+                        <?php } ?>
 
-                    <p class="tipo"> <span></span> Administrador</p>
-
-                    <img src="imagens-adim/Lixeira-perfil.png" alt="Excluir">
-                </a>
-
-                <a  href="historico.php" class="itens">
-                    <p>001</p>
-
-                    <p>Sofia Rodrigues</p>
-
-                    <p>sofia.rodrigues@gmail.com</p>
-
-                    <p class="tipo"> <span></span> Administrador</p>
-
-                    <img src="imagens-adim/Lixeira-perfil.png" alt="Excluir">
-                </a>
+                        <img src="imagens-adim/Lixeira-perfil.png" alt="Excluir">
+                    </a>
+                <?php } ?>
             </div>
         </main>
     </div>

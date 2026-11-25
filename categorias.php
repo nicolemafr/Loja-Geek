@@ -1,3 +1,9 @@
+<?php
+require "./data/conexao.php";
+$sql = "Select * from categorias";
+$resultado = $conn->query($sql);
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -29,133 +35,23 @@
             <h1>GERENCIAR CATEGORIAS</h1>
 
             <div class="caixas">
-                <a href="editar-categorias.php" class="caixa">
-                    <div class="Fundo">
-                        <img src="imagens-adim/Manga9-2.png" alt="" class="F1">
-                        <img src="imagens-adim/Manga15-2.png" alt="" class="F2">
-                    </div>
-
-                    <div class="info">
-                        <div>
-                            <span>15 PRODUTOS</span>
-                            <p>MANGÁS</p>
+                <?php for ($i = 0; $i < $resultado->num_rows; $i++) {
+                    $categoria = $resultado->fetch_assoc(); ?>
+                    <a href="editar-categorias.php" class="caixa">
+                        <div class="Fundo">
+                            <img src="<?= htmlspecialchars($categoria['imagem']) ?>" alt="">
                         </div>
 
-                        <img src="imagens-adim/Botão add.png" alt="">
-                    </div>
-                </a>
+                        <div class="info">
+                            <div>
+                                <span>15 PRODUTOS</span>
+                                <p><?= htmlspecialchars($categoria['nome']) ?></p>
+                            </div>
 
-                <a href="editar-categorias.php" class="caixa">
-                    <div class="Fundo">
-                        <img src="imagens-adim/Manga9-2.png" alt="" class="F1">
-                        <img src="imagens-adim/Manga15-2.png" alt="" class="F2">
-                    </div>
-
-                    <div class="info">
-                        <div>
-                            <span>15 PRODUTOS</span>
-                            <p>MANGÁS</p>
+                            <img src="imagens-adim/Botão add.png" alt="">
                         </div>
-
-                        <img src="imagens-adim/Botão add.png" alt="">
-                    </div>
-                </a>
-
-                <a href="editar-categorias.php" class="caixa">
-                    <div class="Fundo">
-                        <img src="imagens-adim/Manga9-2.png" alt="" class="F1">
-                        <img src="imagens-adim/Manga15-2.png" alt="" class="F2">
-                    </div>
-
-                    <div class="info">
-                        <div>
-                            <span>15 PRODUTOS</span>
-                            <p>MANGÁS</p>
-                        </div>
-
-                        <img src="imagens-adim/Botão add.png" alt="">
-                    </div>
-                </a>
-
-                <a href="editar-categorias.php" class="caixa">
-                    <div class="Fundo">
-                        <img src="imagens-adim/Manga9-2.png" alt="" class="F1">
-                        <img src="imagens-adim/Manga15-2.png" alt="" class="F2">
-                    </div>
-
-                    <div class="info">
-                        <div>
-                            <span>15 PRODUTOS</span>
-                            <p>MANGÁS</p>
-                        </div>
-
-                        <img src="imagens-adim/Botão add.png" alt="">
-                    </div>
-                </a>
-
-                <a href="editar-categorias.php" class="caixa">
-                    <div class="Fundo">
-                        <img src="imagens-adim/Manga9-2.png" alt="" class="F1">
-                        <img src="imagens-adim/Manga15-2.png" alt="" class="F2">
-                    </div>
-
-                    <div class="info">
-                        <div>
-                            <span>15 PRODUTOS</span>
-                            <p>MANGÁS</p>
-                        </div>
-
-                        <img src="imagens-adim/Botão add.png" alt="">
-                    </div>
-                </a>
-
-                <a href="editar-categorias.php" class="caixa">
-                    <div class="Fundo">
-                        <img src="imagens-adim/Manga9-2.png" alt="" class="F1">
-                        <img src="imagens-adim/Manga15-2.png" alt="" class="F2">
-                    </div>
-
-                    <div class="info">
-                        <div>
-                            <span>15 PRODUTOS</span>
-                            <p>MANGÁS</p>
-                        </div>
-
-                        <img src="imagens-adim/Botão add.png" alt="">
-                    </div>
-                </a>
-
-                <a href="editar-categorias.php" class="caixa">
-                    <div class="Fundo">
-                        <img src="imagens-adim/Manga9-2.png" alt="" class="F1">
-                        <img src="imagens-adim/Manga15-2.png" alt="" class="F2">
-                    </div>
-
-                    <div class="info">
-                        <div>
-                            <span>15 PRODUTOS</span>
-                            <p>MANGÁS</p>
-                        </div>
-
-                        <img src="imagens-adim/Botão add.png" alt="">
-                    </div>
-                </a>
-
-                <a href="editar-categorias.php" class="caixa">
-                    <div class="Fundo">
-                        <img src="imagens-adim/Manga9-2.png" alt="" class="F1">
-                        <img src="imagens-adim/Manga15-2.png" alt="" class="F2">
-                    </div>
-
-                    <div class="info">
-                        <div>
-                            <span>15 PRODUTOS</span>
-                            <p>MANGÁS</p>
-                        </div>
-
-                        <img src="imagens-adim/Botão add.png" alt="">
-                    </div>
-                </a>
+                    </a>
+                <?php } ?>
             </div>
         </main>
     </div>

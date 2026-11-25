@@ -1,3 +1,12 @@
+<?php
+require "./data/conexao.php";
+$sql = "Select * from produtos";
+$sql2 = "Select categorias.nome from produtos inner 
+join categorias on categorias.id_categoria = produtos.id_categoria";
+$resultado = $conn->query($sql);
+$resultado2 = $conn->query($sql2);
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -64,27 +73,31 @@
                     <p>QUANTIDADE</p>
                     <p>STATUS</p>
                     <p>AÇÕES</p>
-                </div> 
-
-                <div class="itens">
-
-                    <div class="produto">
-                        <img src="imagens-adim/perfil-user.png" alt="">
-                        <p>Camiseta NIKA</p>
-                    </div>
-
-                    <p>Vestuário</p>
-
-                    <p class="quantidade">20</p>
-
-                    <p class="em-estoque">Em estoque</p>
-
-                    <div class="acoes">
-                        <img src="imagens-adim/Caneta-Editar.png" alt="Editar">
-                        <img src="imagens-adim/Lixeira-perfil.png" alt="Excluir">
-                    </div>
-
                 </div>
+                <?php for ($i = 0; $i < $resultado->num_rows; $i++) {
+                    $produto = $resultado->fetch_assoc();
+                    $categoria = $resultado2->fetch_assoc();
+                    ?>
+                    <div class="itens">
+                        <div class="produto">
+                            <img src="<?= htmlspecialchars($produto['imagem']) ?>" alt="">
+                            <p><?= htmlspecialchars($produto['nome']) ?></p>
+                        </div>
+
+                        <p><?= htmlspecialchars($produto['nome']) ?></p>
+                        <p class="quantidade"><?= htmlspecialchars($produto['quantidade_estoque']) ?></p>
+                        <?php if ($produto['quantidade_estoque'] > 0) { ?>
+                            <p class="em-estoque">Em estoque</p>
+                        <?php } else { ?>
+                            <p>Sem estoque</p>
+                        <?php } ?>
+
+                        <div class="acoes">
+                            <img src="imagens-adim/Caneta-Editar.png" alt="Editar">
+                            <img src="imagens-adim/Lixeira-perfil.png" alt="Excluir">
+                        </div>
+                    </div>
+                <?php } ?>
 
             </div>
         </main>

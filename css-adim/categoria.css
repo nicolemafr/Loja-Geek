@@ -92,26 +92,11 @@ body {
                     width: 100%;
                     position: relative;
 
-                    .F1,
-                    .F2 {
+                    img{
+                        width: 200px;
                         position: absolute;
-                        width: 150px;
-                        left: 50%;
-                        right: 50%;
-                        transform: translate(-50%, -50%);
-                        z-index: -1;
-                    }
-
-                    .F1 {
-                        transform: rotateZ(10deg);
-                        top: 30px;
-                        left: 35%;
-                    }
-
-                    .F2 {
-                        transform: rotateZ(-10deg);
-                        top: 15px;
-                        left: 10%;
+                        left: 25px;
+                        bottom: -25px;
                     }
                 }
 
