@@ -66,7 +66,6 @@ $resultado = $conn->query($sql);
 
                             <div class="acoes">
                                 <div class="acoes">
-                                    <img src="imagens-adim/Caneta-Editar.png" alt="Editar">
                                     <img src="imagens-adim/Lixeira-perfil.png" alt="Excluir">
                                 </div>
                             </div>

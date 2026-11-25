@@ -64,7 +64,7 @@ $dados = $resultado->fetch_assoc();
                     <p>PRODUTO</p>
                     <p>QUANTIDADE</p>
                     <p>STATUS</p>
-                    <p>AÇÕES</p>
+                    <p>DELETAR</p>
                 </div>
                 <?php for ($i = 0; $i < $resultado->num_rows; $i++) {?>
                 <div class="itens">
@@ -78,7 +78,6 @@ $dados = $resultado->fetch_assoc();
                     <p class="em-estoque">Em estoque</p>
 
                     <div class="acoes">
-                        <img src="imagens-adim/Caneta-Editar.png" alt="Editar">
                         <img src="imagens-adim/Lixeira-perfil.png" alt="Excluir">
                     </div>
                 </div>

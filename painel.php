@@ -72,7 +72,7 @@ $resultado2 = $conn->query($sql2);
                     <p>CATEGORIA</p>
                     <p>QUANTIDADE</p>
                     <p>STATUS</p>
-                    <p>AÇÕES</p>
+                    <p>DELETAR</p>
                 </div>
                 <?php for ($i = 0; $i < $resultado->num_rows; $i++) {
                     $produto = $resultado->fetch_assoc();
@@ -93,7 +93,6 @@ $resultado2 = $conn->query($sql2);
                         <?php } ?>
 
                         <div class="acoes">
-                            <img src="imagens-adim/Caneta-Editar.png" alt="Editar">
                             <img src="imagens-adim/Lixeira-perfil.png" alt="Excluir">
                         </div>
                     </div>
